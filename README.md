@@ -55,8 +55,9 @@ body {font-family: "Lato", sans-serif;}
 <body>
 
 <h2>Important Note</h2>
+<a href="german.html" target="_blank">Go to German</a>
 <p>Click on the buttons inside the tabbed menu:</p>
-  <a href="German.html">German</a>
+  <a href="german.html">German</a>
 <div class="tab">
 
 <button class="tablinks" onclick="openCity(event, 'Text1')" id="defaultOpen">Text 1</button>
