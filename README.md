@@ -54,7 +54,7 @@ body {font-family: "Lato", sans-serif;}
 </head>
 <body>
 
-<h1><a style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);" href="german.html" target="_blank">Go to Important Note-German</a><h1>
+<h4><a style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);" href="german.html" target="_blank">Go to Important Note-German</a><h4>
 <h2>Important Note - English</h2>
 <p>Click on the buttons inside the tabbed menu:</p>
   <a href="german.html">German</a>
