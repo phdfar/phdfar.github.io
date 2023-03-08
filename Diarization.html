@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		.container {
+			margin: 0 auto;
+			max-width: 800px;
+			padding: 20px;
+		}
+
+		.row {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 10px 0;
+		}
+
+		.column {
+			flex: 1;
+			padding: 4px;
+		}
+
+		audio {
+			width: 100%;
+		}
+
+		.playBtn,
+		.pauseBtn {
+			margin: 5px;
+		}
+
+		.playBtn:focus,
+		.pauseBtn:focus {
+			outline: none;
+		}
+
+		.playBtn:hover,
+		.pauseBtn:hover {
+			background-color: lightgray;
+		}
+
+
+
+		* {
+			box-sizing: border-box
+		}
+
+		body {
+			font-family: "Lato", sans-serif;
+		}
+
+		/* Style the tab */
+		.tab {
+			float: left;
+			border: 1px solid #ccc;
+			background-color: #f1f1f1;
+			width: 30%;
+			height: 2200px;
+		}
+
+		/* Style the buttons inside the tab */
+		.tab button {
+			display: block;
+			background-color: inherit;
+			color: black;
+			padding: 22px 16px;
+			width: 100%;
+			border: none;
+			outline: none;
+			text-align: left;
+			cursor: pointer;
+			transition: 0.3s;
+			font-size: 17px;
+		}
+
+		/* Change background color of buttons on hover */
+		.tab button:hover {
+			background-color: #ddd;
+		}
+
+		/* Create an active/current "tab button" class */
+		.tab button.active {
+			background-color: #ccc;
+		}
+
+		/* Style the tab content */
+		.tabcontent {
+			float: left;
+			padding: 0px 12px;
+			border: 1px solid #ccc;
+			width: 70%;
+			border-left: none;
+			height: 2200px;
+		}
+
+		table,
+		th,
+		td {
+			border: 1px solid black;
+		}
+	</style>
+</head>
+
+<body>
+
+	<h2>Diarization</h2>
+	<p>Click on the buttons inside the tabbed menu:</p>
+
+	<div class="tab">
+
+		<button class="tablinks" onclick="openCity(event, 'Text1')" id="defaultOpen">Text 1</button>
+		<button class="tablinks" onclick="openCity(event, 'Text2')">Text 2</button>
+		<button class="tablinks" onclick="openCity(event, 'Text3')">Text 3</button>
+		<button class="tablinks" onclick="openCity(event, 'Text4')">Text 4</button>
+		<button class="tablinks" onclick="openCity(event, 'Text5')">Text 5</button>
+		<button class="tablinks" onclick="openCity(event, 'Text6')">Text 6</button>
+		<button class="tablinks" onclick="openCity(event, 'Text7')">Text 7</button>
+		<button class="tablinks" onclick="openCity(event, 'Text8')">Text 8</button>
+		<button class="tablinks" onclick="openCity(event, 'Text9')">Text 9</button>
+		<button class="tablinks" onclick="openCity(event, 'Text10')">Text 10</button>
+		<button class="tablinks" onclick="openCity(event, 'Text11')">Text 11</button>
+		<button class="tablinks" onclick="openCity(event, 'Text12')">Text 12</button>
+		<button class="tablinks" onclick="openCity(event, 'Text13')">Text 13</button>
+		<button class="tablinks" onclick="openCity(event, 'Text14')">Text 14</button>
+		<button class="tablinks" onclick="openCity(event, 'Text15')">Text 15</button>
+		<button class="tablinks" onclick="openCity(event, 'Text16')">Text 16</button>
+		<button class="tablinks" onclick="openCity(event, 'Text17')">Text 17</button>
+		<button class="tablinks" onclick="openCity(event, 'Text18')">Text 18</button>
+		<button class="tablinks" onclick="openCity(event, 'Text19')">Text 19</button>
+		<button class="tablinks" onclick="openCity(event, 'Text20')">Text 20</button>
+		<button class="tablinks" onclick="openCity(event, 'Text21')">Text 21</button>
+		<button class="tablinks" onclick="openCity(event, 'Text22')">Text 22</button>
+		<button class="tablinks" onclick="openCity(event, 'Text23')">Text 23</button>
+		<button class="tablinks" onclick="openCity(event, 'Text24')">Text 24</button>
+		<button class="tablinks" onclick="openCity(event, 'Text25')">Text 25</button>
+		<button class="tablinks" onclick="openCity(event, 'Text26')">Text 26</button>
+		<button class="tablinks" onclick="openCity(event, 'Text27')">Text 27</button>
+		<button class="tablinks" onclick="openCity(event, 'Text28')">Text 28</button>
+		<button class="tablinks" onclick="openCity(event, 'Text29')">Text 29</button>
+		<button class="tablinks" onclick="openCity(event, 'Text30')">Text 30</button>
+		<button class="tablinks" onclick="openCity(event, 'Text31')">Text 31</button>
+		<button class="tablinks" onclick="openCity(event, 'Text32')">Text 32</button>
+		<button class="tablinks" onclick="openCity(event, 'Text33')">Text 33</button>
+		<button class="tablinks" onclick="openCity(event, 'Text34')">Text 34</button>
+		<button class="tablinks" onclick="openCity(event, 'Text35')">Text 35</button>
+		<button class="tablinks" onclick="openCity(event, 'Text36')">Text 36</button>
+		<button class="tablinks" onclick="openCity(event, 'Text37')">Text 37</button>
+		<button class="tablinks" onclick="openCity(event, 'Text38')">Text 38</button>
+		<button class="tablinks" onclick="openCity(event, 'Text39')">Text 39</button>
+		<button class="tablinks" onclick="openCity(event, 'Text40')">Text 40</button>
+		<button class="tablinks" onclick="openCity(event, 'Text41')">Text 41</button>
+		<button class="tablinks" onclick="openCity(event, 'Text42')">Text 42</button>
+		<button class="tablinks" onclick="openCity(event, 'Text43')">Text 43</button>
+		<button class="tablinks" onclick="openCity(event, 'Text44')">Text 44</button>
+		<button class="tablinks" onclick="openCity(event, 'Text45')">Text 45</button>
+		<button class="tablinks" onclick="openCity(event, 'Text46')">Text 46</button>
+		<button class="tablinks" onclick="openCity(event, 'Text47')">Text 47</button>
+		<button class="tablinks" onclick="openCity(event, 'Text48')">Text 48</button>
+		<button class="tablinks" onclick="openCity(event, 'Text49')">Text 49</button>
+		<button class="tablinks" onclick="openCity(event, 'Text50')">Text 50</button>
+		<button class="tablinks" onclick="openCity(event, 'Text51')">Text 51</button>
+		<button class="tablinks" onclick="openCity(event, 'Text52')">Text 52</button>
+		<button class="tablinks" onclick="openCity(event, 'Text53')">Text 53</button>
+		<button class="tablinks" onclick="openCity(event, 'Text54')">Text 54</button>
+		<button class="tablinks" onclick="openCity(event, 'Text55')">Text 55</button>
+		<button class="tablinks" onclick="openCity(event, 'Text56')">Text 56</button>
+		<button class="tablinks" onclick="openCity(event, 'Text57')">Text 57</button>
+		<button class="tablinks" onclick="openCity(event, 'Text58')">Text 58</button>
+		<button class="tablinks" onclick="openCity(event, 'Text59')">Text 59</button>
+		<button class="tablinks" onclick="openCity(event, 'Text60')">Text 60</button>
+		<button class="tablinks" onclick="openCity(event, 'Text61')">Text 61</button>
+		<button class="tablinks" onclick="openCity(event, 'Text62')">Text 62</button>
+		<button class="tablinks" onclick="openCity(event, 'Text63')">Text 63</button>
+		<button class="tablinks" onclick="openCity(event, 'Text64')">Text 64</button>
+		<button class="tablinks" onclick="openCity(event, 'Text65')">Text 65</button>
+		<button class="tablinks" onclick="openCity(event, 'Text66')">Text 66</button>
+		<button class="tablinks" onclick="openCity(event, 'Text67')">Text 67</button>
+		<button class="tablinks" onclick="openCity(event, 'Text68')">Text 68</button>
+		<button class="tablinks" onclick="openCity(event, 'Text69')">Text 69</button>
+		<button class="tablinks" onclick="openCity(event, 'Text70')">Text 70</button>
+		<button class="tablinks" onclick="openCity(event, 'Text71')">Text 71</button>
+		<button class="tablinks" onclick="openCity(event, 'Text72')">Text 72</button>
+		<button class="tablinks" onclick="openCity(event, 'Text73')">Text 73</button>
+		<button class="tablinks" onclick="openCity(event, 'Text74')">Text 74</button>
+		<button class="tablinks" onclick="openCity(event, 'Text75')">Text 75</button>
+		<button class="tablinks" onclick="openCity(event, 'Text76')">Text 76</button>
+		<button class="tablinks" onclick="openCity(event, 'Text77')">Text 77</button>
+		<button class="tablinks" onclick="openCity(event, 'Text78')">Text 78</button>
+		<button class="tablinks" onclick="openCity(event, 'Text79')">Text 79</button>
+		<button class="tablinks" onclick="openCity(event, 'Text80')">Text 80</button>
+		<button class="tablinks" onclick="openCity(event, 'Text81')">Text 81</button>
+		<button class="tablinks" onclick="openCity(event, 'Text82')">Text 82</button>
+		<button class="tablinks" onclick="openCity(event, 'Text83')">Text 83</button>
+		<button class="tablinks" onclick="openCity(event, 'Text84')">Text 84</button>
+		<button class="tablinks" onclick="openCity(event, 'Text85')">Text 85</button>
+		<button class="tablinks" onclick="openCity(event, 'Text86')">Text 86</button>
+		<button class="tablinks" onclick="openCity(event, 'Text87')">Text 87</button>
+		<button class="tablinks" onclick="openCity(event, 'Text88')">Text 88</button>
+		<button class="tablinks" onclick="openCity(event, 'Text89')">Text 89</button>
+		<button class="tablinks" onclick="openCity(event, 'Text90')">Text 90</button>
+		<button class="tablinks" onclick="openCity(event, 'Text91')">Text 91</button>
+		<button class="tablinks" onclick="openCity(event, 'Text92')">Text 92</button>
+		<button class="tablinks" onclick="openCity(event, 'Text93')">Text 93</button>
+		<button class="tablinks" onclick="openCity(event, 'Text94')">Text 94</button>
+		<button class="tablinks" onclick="openCity(event, 'Text95')">Text 95</button>
+		<button class="tablinks" onclick="openCity(event, 'Text96')">Text 96</button>
+		<button class="tablinks" onclick="openCity(event, 'Text97')">Text 97</button>
+		<button class="tablinks" onclick="openCity(event, 'Text98')">Text 98</button>
+		<button class="tablinks" onclick="openCity(event, 'Text99')">Text 99</button>
+		<button class="tablinks" onclick="openCity(event, 'Text100')">Text 100</button>
+
+	</div>
+
+	<div id="Text1" class="tabcontent">
+		<h3>Main Text</h3>
+
+		<div class="container">
+			<h1>Audio Transcription Example</h1>
+			<div class="row">
+				<div class="column">
+					<p id="speaker_0">speaker_0
+						<audio id="audio1" src="an4_diarize_test_0.mp3"></audio>
+						<button class="playBtn" onclick="playAudio('audio1')">Play</button>
+						<button class="pauseBtn" onclick="pauseAudio('audio1')">Pause</button>
+					</p>
+					<p id="text1">eleven twenty seven fifty seven
+					</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="column">
+					<p id="speaker_1">speaker_1
+						<audio id="audio2" src="an4_diarize_test_1.mp3"></audio>
+						<button class="playBtn" onclick="playAudio('audio2')">Play</button>
+						<button class="pauseBtn" onclick="pauseAudio('audio2')">Pause</button>
+					</p>
+					<p id="text2">october twenty four nineteen seventy
+					</p>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="column">
+					<p id="speaker3">speaker3
+						<audio id="audio3" src="audio3.mp3"></audio>
+						<button class="playBtn" onclick="playAudio('audio3')">Play</button>
+						<button class="pauseBtn" onclick="pauseAudio('audio3')">Pause</button>
+					</p>
+				</div>
+				<div class="column">
+					<p id="text3">salam</p>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<script>
+		function openCity(evt, cityName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(cityName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+
+		let currentAudio = null;
+		const audioElements = document.querySelectorAll("audio");
+
+
+		function playAudio(id) {
+			const audio = document.getElementById(id);
+
+			for (let i = 0; i < audioElements.length; i++) {
+				//textid=
+				//document.getElementById("audio3").innerHTML = textid;
+				//const myElement = document.getElementById('text'+(i+1));
+				document.getElementById('text' + (i + 1)).style.backgroundColor = "#ffffff";
+			}
+
+			let textid = id.replace('audio', 'text');
+
+			//document.getElementById("demo").innerHTML = id;
+
+			const myElement = document.getElementById(textid);
+			myElement.style.backgroundColor = "#e8eb34";
+
+
+			audio.play();
+			if (currentAudio && currentAudio !== audio) {
+				currentAudio.pause();
+			}
+			currentAudio = audio;
+		}
+
+		function pauseAudio(id) {
+			const audio = document.getElementById(id);
+			audio.pause();
+		}
+
+		for (let i = 0; i < audioElements.length - 1; i++) {
+			audioElements[i].addEventListener("ended", function () {
+				playAudio(audioElements[i + 1].id);
+			});
+		}
+
+	</script>
+
+</body>
+
+</html>
