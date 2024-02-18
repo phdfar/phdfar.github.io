@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 2200px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 2200px;
+}
+
+table, th, td {
+  border:1px solid black;
+}
+</style>
+</head>
+<body>
+
+<h2>Important Note-German</h2>
+<p>Click on the buttons inside the tabbed menu:</p>
+
+<div class="tab">
+
+<button class="tablinks" onclick="openCity(event, 'Text1')" id="defaultOpen">Text 1</button>
+<button class="tablinks" onclick="openCity(event, 'Text2')">Text 2</button>
+<button class="tablinks" onclick="openCity(event, 'Text3')">Text 3</button>
+
+
+</div>
+
+<div id="Text1" class="tabcontent">
+<h3>Main Text</h3>
+ <p><ul style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);"><li>#Person1#: Ms. Dawson, Sie müssen eine Diktation für mich nehmen.</li><li>#Person2#: Ja, Sir...</li><li>#Person1#: Dies sollte bis heute nachmittag als Intra-office-Memorandum für alle Mitarbeiter ausgehen. Bist du bereit?</li><li>#Person2#: Ja, Sir. Los.</li><li>#Person1#: Achtung aller Mitarbeiter... Effektiv sofort sind alle Bürokommunikationen auf E-Mail-Korrespondenz und offizielle Memos beschränkt. Die Nutzung von Instant Message Programmen durch Mitarbeiter während der Arbeitszeit ist streng verboten.</li><li>#Person2#: Sir, gilt dies nur für In-office-Kommunikation? Oder wird es auch externe Kommunikation einschränken?</li><li>#Person1#: Sie sollte für alle Kommunikationen gelten, nicht nur in diesem Büro zwischen Mitarbeitern, sondern auch außerhalb der Kommunikation.</li><li>#Person2#: Aber Sir, viele Mitarbeiter verwenden Instant Messaging, um mit ihren Kunden zu kommunizieren.</li><li>#Person1#: Sie müssen nur ihre Kommunikationsmethoden ändern. Ich will keinen - einen mit Instant Messaging in diesem Büro. Es verschwendet zu viel Zeit! Nun, bitte weiter mit der Memo. Wo waren wir?</li><li>#Person2#: Dies gilt für interne und externe Kommunikationen.</li><li>#Person1#: Ja. Jeder Mitarbeiter, der bei der Verwendung von Instant Messaging fortbesteht, erhält zuerst eine Warnung und wird auf Bewährung gesetzt. Bei der zweiten Offensive wird der Mitarbeiter mit der Kündigung konfrontiert. Fragen zu dieser neuen Politik können an die Abteilungsleiter gerichtet werden.</li><li>#Person2#: Ist das alles?</li><li>#Person1#: Ja. Bitte besorgen Sie sich dieses Memo vor 16 Uhr an alle Mitarbeiter.</li></ul></p>
+ <h3>Ground-truth Summary</h3>
+ <p><table style="width:100%;"><tr><td><ul><li>Frau Dawson hilft #Person1#, ein Memo zu schreiben, um jeden Mitarbeiter zu informieren, dass sie die Kommunikationsmethode ändern müssen und Instant Messaging nicht mehr verwenden sollten</li><li> Um zu verhindern, dass Mitarbeiter Zeit auf Instant Message-Programme verschwenden, beschließt #Person1#, die Nutzung dieser Programme zu beenden und fordert Frau Dawson, eine Memo an alle Mitarbeiter zu senden</li><li> Frau Dawson nimmt eine Diktation für #Person1# über das Verbot der Verwendung von Instant Message Programmen im Büro</li><li> Sie argumentieren über seine Vernunft, aber #Person1# besteht immer noch</li><li></li></ul></td><td><ul><li>Ms</li><li> Dawson helps #Person1# to write a memo to inform every employee that they have to change the communication method and should not use Instant Messaging anymore</li><li> In order to prevent employees from wasting time on Instant Message programs, #Person1# decides to terminate the use of those programs and asks Ms</li><li> Dawson to send out a memo to all employees by the afternoon</li><li> Ms</li><li> Dawson takes a dictation for #Person1# about prohibiting the use of Instant Message programs in the office</li><li> They argue about its reasonability but #Person1# still insists</li><li></li></ul></td></tr></table></p>
+ <h3>T5 Flan Large Summary</h3>
+ <p><table style="width:100%;"><tr><td><ul><li>The use of instant messaging is strictly prohibited in the office</li><li> Any employee who continues to use instant messaging will be given a warning and is set to parole</li><li> At the second offensive, the employee is facing with the termination</li><li> The memo should be sent before 4:00 to all employees</li><li> The new policy applies to internal and external communications</li><li> Any employee who</li></ul></td><td><ul><li>#Person1 wants Ms</li><li> Dawson to take dictation for him</li><li> #Person1: All office communications are restricted to email correspondence and official memos</li><li> #Person1: The use of Instant Message programs by employees during working hours is strictly prohibited</li><li> #Person1: Any employee who persists in using Instant</li></ul></td></tr></table></p>
+</div>
+<div id="Text2" class="tabcontent">
+<h3>Main Text</h3>
+ <p><ul style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);"><li>#Person1#: Du bist endlich hier! Was dauerte so lange?</li><li>#Person2#: Ich bin wieder im Verkehr stecken geblieben. Es gab einen schrecklichen Stau in der Nähe der Carrefour Kreuzung.</li><li>#Person1#: Es ist immer ziemlich verstopft dort während der Eile Stunde. Vielleicht solltest du versuchen, einen anderen Weg zu finden, um nach Hause zu kommen.</li><li>#Person2#: Ich glaube nicht, dass es vermieden werden kann, um ehrlich zu sein.</li><li>#Person1#: Vielleicht wäre es besser, wenn Sie mit öffentlichen Verkehrsmitteln zu arbeiten begannen.</li><li>#Person2#: Ich denke, es ist etwas, das ich berücksichtigen muss. Das öffentliche Verkehrssystem ist ziemlich gut.</li><li>#Person1#: Es wäre auch für die Umwelt besser.</li><li>#Person2#: Ich weiß. Ich fühle mich schlecht darüber, wie viel mein Auto dem Verschmutzungsproblem in dieser Stadt hinzufügt.</li><li>#Person1#: Die U-Bahn zu nehmen wäre viel weniger stressig als das Fahren.</li><li>#Person2#: Das einzige Problem ist, dass ich die Freiheit, die Sie mit einem Auto haben, wirklich vermissen werde.</li><li>#Person1#: Nun, wenn es draußen schöner ist, können Sie mit dem Fahrrad fahren, um zu arbeiten. Das gibt Ihnen ebenso viel Freiheit wie Ihr Auto in der Regel.</li><li>#Person2#: Das ist wahr. Ich könnte die Übung nutzen!</li><li>#Person1#: Also, willst du damit aufhören zu arbeiten?</li><li>#Person2#: Ja, es ist nicht gut für mich oder für die Umwelt.</li></ul></p>
+ <h3>Ground-truth Summary</h3>
+ <p><table style="width:100%;"><tr><td><ul><li>#Person2# kommt wegen Staus spät an</li><li> #Person1# überzeugt #Person2#, um öffentliche Verkehrsmittel zu nutzen, um gesund zu bleiben und die Umwelt zu schützen</li><li> #Person2# beschließt, #Person1#'s Vorschläge zu beenden Fahren zur Arbeit und wird versuchen, öffentliche Verkehrsmittel zu verwenden</li><li> #Person2# beschwert sich auf #Person1# über den Stau, #Person1# schlägt auf, das Fahren zu beenden und die öffentlichen Verkehrsmittel statt</li><li></li></ul></td><td><ul><li>#Person2# arrives late because of traffic jam</li><li> #Person1# persuades #Person2# to use public transportations to keep healthy and to protect the environment</li><li> #Person2# decides to follow #Person1#'s suggestions on quitting driving to work and will try to use public transportations</li><li> #Person2# complains to #Person1# about the traffic jam, #Person1# suggests quitting driving and taking public transportation instead</li><li></li></ul></td></tr></table></p>
+ <h3>T5 Flan Large Summary</h3>
+ <p><table style="width:100%;"><tr><td><ul><li>Person2 stayed in traffic for a long time to get home</li><li> She feels bad about how much her car contributes to the pollution problem in the city</li><li> She wants to stop working with her car as it is not good for her or for the environment</li><li> She will drive by bike to work to get exercise</li><li> She will stop working with</li></ul></td><td><ul><li>Person2 got stuck in traffic again</li><li> He's going to take public transport to work</li><li> He's going to quit driving to work as it's not good for him or for the environment</li><li> He's going to start biking to work when it's nicer outside</li><li> He's going to quit driving to work as it</li></ul></td></tr></table></p>
+</div>
+<div id="Text3" class="tabcontent">
+<h3>Main Text</h3>
+ <p><ul style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);"><li>Kate, du glaubst nie, was passiert ist.</li><li>#Person2#: Was meinst du?</li><li>#Person1#: Masha und Hero werden geschieden.</li><li>#Person2#: Du machst Witze. Was ist passiert?</li><li>#Person1#: Nun, ich weiß nicht wirklich, aber ich hörte, dass sie eine Trennung für 2 Monate haben, und für Scheidung eingereicht.</li><li>#Person2#: Das ist wirklich überraschend. Ich dachte immer, sie sind gut aufeinander abgestimmt. Was ist mit den Kindern? Wer bekommt Gewahrsam?</li><li>#Person1#: Masha, es scheint ruhig und makable, kein Streit darüber, wer das Haus und die Lager bekommen und dann die Scheidung mit anderen Details herausgearbeitet.</li><li>#Person2#: Das ist der Wechsel von all dem Rückschritt, von dem wir normalerweise hören. Ich kann es immer noch nicht glauben, Masha und Hero, das perfekte Paar. Wann würden sie sich scheiden?</li><li>#Person1#: Früh im neuen Jahr schätze ich.</li></ul></p>
+ <h3>Ground-truth Summary</h3>
+ <p><table style="width:100%;"><tr><td><ul><li>#Person1# sagt Kate, dass Masha und Hero geschieden werden</li><li> Kate ist überrascht, weil sie dachte, sie seien perfekte Paare</li><li> #Person1# sagt Kate, dass Masha und Hero eine friedliche Scheidung bekommen</li><li> Kate fühlt sich überrascht und fragt nach ihren Kindern</li><li> #Person1# und Kate reden über die Scheidung zwischen Masha und Hero</li><li> Kate fühlt sich überrascht, weil sie dachte, dass sie gut abgestimmt sind</li></ul></td><td><ul><li>#Person1# tells Kate that Masha and Hero get divorced</li><li> Kate is surprised because she thought they are perfect couple</li><li> #Person1# tells Kate that Masha and Hero are getting a peaceful divorce</li><li> Kate feels surprised and asks about their kids</li><li> #Person1# and Kate talk about the divorce between Masha and Hero</li><li> Kate feels surprised because she thought they are well matched</li></ul></td></tr></table></p>
+ <h3>T5 Flan Large Summary</h3>
+ <p><table style="width:100%;"><tr><td><ul><li>Masha and Hero have separated for 2 months, and submitted for divorce</li><li> They will divorce early in the new year</li><li> They will split up the house and the camp</li><li> They will have custody of the kids and the house and the camp will be shared by both of them</li><li> They will have custody of the kids and the house and the camp</li><li></li></ul></td><td><ul><li>Masha and Hero are getting divorced</li><li> They are having a separation for 2 months, and filed for divorce</li><li> They will have custody of their children</li><li> They will divorce early in the New Year, Kate thinks</li><li> They will have custody of their children</li><li> They will have a separation for 2 months, and then file for divorce</li><li></li></ul></td></tr></table></p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
