@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 2200px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 2200px;
+}
+
+table, th, td {
+  border:1px solid black;
+}
+</style>
+</head>
+<body>
+
+<h2>Psychologist Modeling</h2>
+<p>Click on the buttons inside the tabbed menu:</p>
+
+<div class="tab">
+
+<button class="tablinks" onclick="openCity(event, 'Text1')" id="defaultOpen">Text 1</button>
+<button class="tablinks" onclick="openCity(event, 'Text2')">Text 2</button>
+<button class="tablinks" onclick="openCity(event, 'Text3')">Text 3</button>
+<button class="tablinks" onclick="openCity(event, 'Text4')">Text 4</button>
+<button class="tablinks" onclick="openCity(event, 'Text5')">Text 5</button>
+<button class="tablinks" onclick="openCity(event, 'Text6')">Text 6</button>
+<button class="tablinks" onclick="openCity(event, 'Text7')">Text 7</button>
+<button class="tablinks" onclick="openCity(event, 'Text8')">Text 8</button>
+<button class="tablinks" onclick="openCity(event, 'Text9')">Text 9</button>
+<button class="tablinks" onclick="openCity(event, 'Text10')">Text 10</button>
+<button class="tablinks" onclick="openCity(event, 'Text11')">Text 11</button>
+<button class="tablinks" onclick="openCity(event, 'Text12')">Text 12</button>
+<button class="tablinks" onclick="openCity(event, 'Text13')">Text 13</button>
+<button class="tablinks" onclick="openCity(event, 'Text14')">Text 14</button>
+<button class="tablinks" onclick="openCity(event, 'Text15')">Text 15</button>
+<button class="tablinks" onclick="openCity(event, 'Text16')">Text 16</button>
+<button class="tablinks" onclick="openCity(event, 'Text17')">Text 17</button>
+<button class="tablinks" onclick="openCity(event, 'Text18')">Text 18</button>
+<button class="tablinks" onclick="openCity(event, 'Text19')">Text 19</button>
+<button class="tablinks" onclick="openCity(event, 'Text20')">Text 20</button>
+<button class="tablinks" onclick="openCity(event, 'Text21')">Text 21</button>
+<button class="tablinks" onclick="openCity(event, 'Text22')">Text 22</button>
+<button class="tablinks" onclick="openCity(event, 'Text23')">Text 23</button>
+<button class="tablinks" onclick="openCity(event, 'Text24')">Text 24</button>
+<button class="tablinks" onclick="openCity(event, 'Text25')">Text 25</button>
+<button class="tablinks" onclick="openCity(event, 'Text26')">Text 26</button>
+<button class="tablinks" onclick="openCity(event, 'Text27')">Text 27</button>
+<button class="tablinks" onclick="openCity(event, 'Text28')">Text 28</button>
+<button class="tablinks" onclick="openCity(event, 'Text29')">Text 29</button>
+<button class="tablinks" onclick="openCity(event, 'Text30')">Text 30</button>
+  
+
+
+</div>
+
+<div id="Text1" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">What can be the main cause of overeating?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>If we constantly fight against the negative habit we have like overeating, we will overeat more. The right way is to find the trigger and make the right strategy to control the self-harming behavior of the gluttonous woman. Now this stimulus can be anger because of a dispute we had with the managing director of our company the day before, or with our spouse and child, or because of the sadness of losing one of our loved ones, or because of postponing an important task that we have to do. Until we solve the problem in the right way, we overeat to avoid solving the problem. Be sure to read the article about eating disorder and the causes and factors of anorexia nervosa and psychological overeating. If we constantly fight against the negative habit we have like overeating, we will overeat more. The right way is to find the trigger and make the right strategy to control the self-harming behavior of the gluttonous woman. Now this stimulus can be anger because of a dispute we had with the managing director of our company the day before, or with our spouse and child, or because of the sadness of losing one of our loved ones, or because of postponing an important task that we have to do. Until we solve the problem in the right way, we overeat to avoid solving the problem. Be sure to read the article about eating disorder and the causes and factors of anorexia nervosa and psychological overeating.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Overeating and obesity are caused by genetic, psychological and sociological factors. Some people are genetically prone to obesity, or in some people, internal gland diseases may cause obesity. From a psychological point of view, eating is usually a way to solve aggression or to solve emotional needs. Many times children who are neglected feel satisfied by eating too much food and getting fat. Sometimes overeating is a sign of a mental illness. In some societies obesity and health are synonymous. While in other societies, being thin means attractiveness and health. Your question is probably the cause of your family's obesity problem. In the family, the word " obesity" is used to describe people who have a lot of food and are fat. In fact, the opposite is true. In my family, everyone knows that the family members are fat and the children are thin. In our society, being fat means attractiveness, and in my family (especially in the north), being thin mean</p>
+    </div>
+    
+
+    <div id="Text2" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Doctor, the emphasis of psychologists is to enjoy being alone, is it possible?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Yes, it is possible, unfortunately, most of us understood loneliness in terms of situation, not existential loneliness. Loneliness is enjoyable when you gain self-knowledge and know what self-love is. To know what you like, what makes you happy, what our needs are, and to learn to meet your own needs without expecting from others, don't blame yourself, you can forgive yourself for your mistakes, otherwise loneliness without self-confidence and friendship will be like a solitary prison for many people, which is nothing but punishment. And there is nothing to suppress and hate yourself. Yes, it is possible, unfortunately, most of us understood loneliness in terms of situation, not existential loneliness. Loneliness is enjoyable when you gain self-knowledge and know what self-love is. To know what you like, what makes you happy, what our needs are, and to learn to meet your own needs without expecting from others, don't blame yourself, you can forgive yourself for your mistakes, otherwise loneliness without self-confidence and friendship will be like a solitary prison for many people, which is nothing but punishment. And there is nothing to suppress and hate yourself.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Since the beginning of our lives, we have common interests that help us to understand each other better. Of course, sometimes it is necessary to have common goals in life to achieve the best result, but common interests alone do not mean forgetting life. Sometimes it is true that some people are not able to handle life's problems and do not know how to deal with it. There are some psychologists who specialize in the field of interpersonal psychology and they try to understand the other party's life situation from the point of view of helping people with common goals. But since the field is not well known in the world and there are not many psychologists in the whole world, the number of psychologists and counselors is limited and the quality of their work is low. Psychologists in general are not known for their great knowledge and are not well versed in the art of interpersonal relationships. In the field related to interpersonal psychology, the quality and quantity of treatment and the success rate of such counselors is very low. In general, these people do not find the necessary skills to be of real help and are more concerned with the personal gain of the counselor and reaching the necessary result by getting help from the help of others. It is recommended to seek help from a non-specialist counselor in this field.</p>
+    </div>
+    
+
+    <div id="Text3" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Hello, doctor, thank you for answering our questions. Doctor, I can't finish anything and I go in the middle and then give up, what's wrong with me? For example, I go to a language class and I don't continue until the end even though I am very good at learning, or I start several tasks at the same time with great motivation and leave without finishing one of them. I choose different things for myself, and now I am 30 years old, but I am still wandering.</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>I suggest you visit my psychological counseling center and get a brain map. In the brain map, your disorder problem is clearly shown, whether you have ADHD or not? And based on that, you will be interviewed and treatment will begin. I suggest you visit my psychological counseling center and get a brain map. In the brain map, your disorder problem is clearly shown, whether you have ADHD or not? And based on that, you will be interviewed and treatment will begin.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Hello, dear friend, between a situation in which we are placed and after that we experience an emotion or show a behavior, our thoughts are placed, which are of special importance. Suppose you are sleeping in your room at night, and suddenly you wake up with the sound of the window closing, how would you feel if you think that a thief has entered the house? And what behavior do you show? Definitely, these two feeling</p>
+    </div>
+    
+
+    <div id="Text4" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Hello, doctor, I have reached the age of marriage and I am 32 years old. But I want to marry a girl who is about 12 years younger than me. Everyone says that your age gap is too big, your worlds will be different and you will have problems, but I like him very much. Will I really have problems? Thank you for explaining.</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>At the age of 32, your work and identity must be clear, you say that you have reached the age of marriage and you have gained enough social experience, but it seems that you look at marriage very naively and the difficulty and responsibility of marriage is serious. You do not consider its existence. When you choose a girl who is in her 20s, you don't have a deep view of marriage. Has the 20-year-old girl gone through various challenges in society, does she have as much experience and learning as you? Are the marriage standards of both of you the same? Now, in addition to these mentioned experiences, do you two have the same outlook, attitude, and beliefs? Are you the same in terms of political, religious, and family beliefs? Has emotional independence happened in your family relationship? All these things that I have presented to you are things that are examined by the psychologist in pre-marriage counseling one by one, and all the risks that will happen in the future in your life will be fully explained to you by the marriage psychologist, and you will be based on What psychologists put forward, now you decide to take a risk or not? At the age of 32, your work and identity must be clear, you say that you have reached the age of marriage and you have gained enough social experience, but it seems that you look at marriage very naively and the difficulty and responsibility of marriage is serious. You do not consider its existence. When you choose a girl who is in her 20s, you don't have a deep view of marriage. Has the 20-year-old girl gone through various challenges in society, does she have as much experience and learning as you? Are the marriage standards of both of you the same? Now, in addition to these mentioned experiences, do you two have the same outlook, attitude, and beliefs? Are you the same in terms of political, religious, and family beliefs? Has emotional independence happened in your family relationship? All these things that I have presented to you are things that are examined by the psychologist in pre-marriage counseling one by one, and all the risks that will happen in the future in your life will be fully explained to you by the marriage psychologist, and you will be based on What psychologists put forward, now you decide to take a risk or not?</p>
+        <h3>'Prediction Model:'</h3>
+        <p> worlds will definitely be different. But the age gap of 12 years is not a problem in itself, but it is better to pay attention to a few points so that you can make the right choice. The first point is that the age difference of more than 10 years is problematic, because the parties do not unders</p>
+    </div>
+    
+
+    <div id="Text5" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">I got my bachelor's and master's degrees from Amirkabir University and I study a lot, but I'm never satisfied with myself and I think that I didn't do anything special and I think that if I studied another field, maybe I would be better. I have?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>According to the psychotherapy experiences I had with the students of Sharif University and Amir Kabir, most of them have a syndrome called success syndrome. It's as if these people don't notice their success as much as others see it, and they belittle it and relate it to their luck and situation. Of course, these people mostly grew up in families where the stricter the standards, the more their children suffer from this success syndrome. According to the psychotherapy experiences I had with the students of Sharif University and Amir Kabir, most of them have a syndrome called success syndrome. It's as if these people don't notice their success as much as others see it, and they belittle it and relate it to their luck and situation. Of course, these people mostly grew up in families where the stricter the standards, the more their children suffer from this success syndrome.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>It seems that according to the conditions that you mentioned, you have a weak personality and you have not progressed intellectually. In these two years that you have been in this relationship, you did not do anything significant and you did nothing for yourself. You have been living with your parents and they have not encouraged you. You can't expect your parents to constantly support you, as parents do in most cases, and you should ask yourself what you expect from them. In fact, you should find a new and valuable path. This path may be a serious work that requires commitment and you may need to go through it with determination and strength, but you should not expect it. In general, it is better to evaluate yourself and review your performance and self-evaluations from the past. Get help from a counselor.</p>
+    </div>
+    
+
+    <div id="Text6" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Mrs. Doctor, I am very unhappy with myself, I feel that I cannot be happy, everyone compliments me, but I feel that my life is wasted.</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>There is only one happiness in this world and that is being yourself. But no one is himself, everyone is trying to hide it. It seems that we have turned this world into a market and not a beautiful garden. Being the way you don't want to be. Being with someone you don't want to be with. And doing what you don't want to do. The basis of all our troubles. And until someone decides, I will be myself. At any cost, what should I be blamed for? And whether they don't accept me or respect me, everything is fine. But I can't </p>
+        <h3>'Prediction Model:'</h3>
+        <p>With regards and respect, I read your letter and I understand your feelings, but you should know that if you examine this matter logically, you will realize that many events and happenings in life that are not under the control of your will and are not predictable, for example, the birth of a child or the occurrence of a problem in your life, you cannot be certain about the future becaus</p>
+    </div>
+    
+
+    <div id="Text7" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Hello Ms. Rezaei. I am 12 years old now. Since I was a child, I had behaviors that were strange to me, for example, everything that falls on the ground must die, or everything around me must be equal. But I didn't know what the problem was. How long have you been reading books and content on the Peach website? I understood that these are obsessive problems. I raised the issue with my father's mother to go to a counselor because I was really tired. But they treated me very badly, especially my mother. Saying, don't repeat these things again, if you want, you can do it yourself. They started fighting and making fun of me. They have been sensitive to my behavior for a while now, and they were always complaining. They are just slowly forgetting. I don't want to talk to them about this issue anymore, I can't go to a counselor myself because now I'm dependent on my parents financially and transportation, and my parents are monitoring me in every way, in terms of talking to friends. I don't want to talk about this with anyone else, family or friends, I don't know if it's true or not, but I'm afraid that they will treat me badly. I just want to grow up a bit and then I will go to the counselor myself, but I had a question for you, I don't know if you can help me or not, but what should I do until this problem doesn't get worse and I can manage it?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>I'm sorry for all the ignorance of your family, if it causes problems to your problems, don't talk about your obsession with anyone. Obsession can be completely treated with medication and behavioral therapy. If your condition has improved, please refer to it as soon as possible. My psychological counseling podcasts can help you in this regard. You can contact our consulting center to prepare them. Continuous daily exercise for one hour when your heart rate reaches from 75 to 95 cannot help much and balance your brain chemistry in relation to vasus. Obsession can be completely treated with medication and behavioral therapy. If your condition has improved, please refer to it as soon as possible. My psychological counseling podcasts can help you in this regard. You can contact our consulting center to prepare them. Continuous daily exercise for one hour when your heart rate reaches from 75 to 95 can't help much and balance your brain chemistry in relation to Vasus.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Hello, I read your letter and thank you for your trust. When we are in a difficult and uncomfortable situation, sometimes we unconsciously ignore our feelings and logic and focus on the behavior that is most visible and feels most comfortable to us. However, sometimes this type of focusing becomes so annoying that we neglect the main subject of the conversation. In this regard, it is necessary to refer to a psychotherapist and a psychiatrist, and in this regard it is recommended to seek help from a couple therapist in person. Thank you, Zahra Mohammadi-Tawangari Tubi House, with regards, I have read your letters and thank You for your trusting. Whenwe are in difficult and painful situations, sometimes our unconscious mind unconsciously ignores our feelings, and focusing on the behaviors most visible to usfe. However, sometimes this form of focusing is so annoying to us that we overemphasize the main topic of the discussion. In This regard, its necessary to reference a psychotherapy and a psychiatry, and finally, a couple of counseling sessions.</p>
+    </div>
+    
+
+    <div id="Text8" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Doctor, can you give a general explanation about depression, how can we tell if we are depressed or not?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>In relation to depression and its features, it is better to read our content and if you see these signs and symptoms in yourself, be sure to go for treatment. What is depression, let's get to know the symptoms of depression and the complications of depression. General depression, what are the general signs and symptoms of depression in different people? Depression disorder What are the characteristics of depressive mood disorder? Depressed person in relation to depression and its features, it is better to read our content and if you see these signs and symptoms in yourself, definitely go for treatment. What is depression, let's get to know the symptoms of depression and the complications of depression. General depression, what are the general signs and symptoms of depression in different people? Depression disorder What are the characteristics of depressive mood disorder? depressed person.</p>
+        <h3>'Prediction Model:'</h3>
+        <p> depressions are psychological events that involve a lot of thoughts and emotions. Most people think that they are suffering from depression, but the reality is that these people are suffering in the way of thinking and perception. If the issues of depression and other mental disorders are severe, it is recommended to consult a psychiatrist or psychologist. Usually, this disorder requires long-term treatment, and in this case, the person needs to be treated with the help of a counselor.</p>
+    </div>
+    
+
+    <div id="Text9" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Hello, doctor, my son is 16 years old, he is very shy and does not welcome you at all, and even when we go out, he is in agony and anxiety. What do you think I should do?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Hello, your son may be socially isolated due to anxiety. If his anxiety is severe, you must see a psychiatrist to control his anxiety first and then start psychotherapy sessions to learn the keys to developing self-confidence in children and teenagers. But if his anxiety is not severe and he is bothered mostly because of his shyness, start psychotherapy sessions because psychotherapy can find the root of this problem and provide basic solutions. Hello, your son may be socially isolated due to anxiety. If his anxiety is severe, you must see a psychiatrist to control his anxiety first and then start psychotherapy sessions to learn the keys to developing self-confidence in children and teenagers. But if his anxiety is not severe and he is bothered mostly because of his shyness, start psychotherapy sessions because psychotherapy can find the root of this problem and provide basic solutions.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>The best thing to do is to resolve the differences and make them face the consequences of their actions. Also, by supporting and correcting some behaviors, this will make the differences less acute and manageable. The type of treatment is up to the family. Sometimes, one of the parents may decide to intervene, and in these cases, the child's relationship with the parents must be strengthened and the parents can face the difficult conditions with patience and tolerance. The important thing is to remember that the child does not have the right to refuse an offer and be affected by the parents. He can decide to accept the parents' offer if he feels that he has made a wise decision. In these cases and cases, if the parents really have no other problem or there are other suitable options, resolve the issues and get rid of the reasons that cause the child discomfort. And get rid Of the situations that make the child anxious. For example, some children may be afraid of the edges of the road and do not like to go on the edges. So if the mother takes the child to the edge of the street to go and collect the children, the children's anxiety will decrease and they will be calm down. This does not mean that the continuation of these conditions will cause the children discomfort, but it is better to resolve these issues and face the hardships of adulthood with the help of a counselor.</p>
+    </div>
+    
+
+    <div id="Text10" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Hello, I am a 27-year-old lady, I have been married for 7 years. I don't have a problem with my wife, but I am very sad and nervous, I constantly make excuses. I cry for no reason. I have a dual feeling of love and hate towards the important people in my life, like my parents. My father was addicted when I was a child, but he quit when I went to high school, but after that he went to other women. My mother is a naive woman. I don't remember that they ever gave us verbal affection like kissing and caressing. Now, when I see them after a long time, I don't like to kiss them, even my siblings, but I'm not like that about others, I don't have a problem with my wife in this regard, the only person who can touch me is her. I think I have many mental problems, but due to many financial problems, I cannot go to a psychologist. Sometimes I think of suicide, I don't know exactly what my problem is.</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Be sure to see a psychiatrist first to treat your depression, because all the symptoms you mentioned are related to depression and it is completely treatable. Untreated depression will definitely affect your married life soon and will cause more problems for you. Please also read the article on treating depression without drugs. Be sure to see a psychiatrist first to treat your depression, because all the symptoms you mentioned are related to depression and it is completely treatable. Untreated depression will definitely affect your married life soon and will cause more problems for you. Please also read the article on treating depression without drugs.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Hello, dear friend: I noticed that you are very sad, you are constantly complaining about your problems, which do not seem to have a happy ending for you, unfortunately, this is a pattern that continues in your life, and I understand that you feel insecure, considering the issues you have raised, it is necessary to see a psychiatrist first, and if You don rebounds</p>
+    </div>
+    
+
+    <div id="Text11" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Mrs. Doctor, when we deal with people who have fit and athletic bodies, we never tell them that their body, type and body is genetic, and we definitely agree that they have fit bodies with proper exercise and nutrition. What do you think about growth? Can we mentally have such an opinion?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Unfortunately, in relation to the mental and intellectual abilities of people, most of them consider it to be natural and innate, while according to the researches, it has been concluded that the human mind also acts like a muscle and can be increased and developed with practice and practical program. And in these researches, it has been shown that teachers who care about the mentality of people and its development have been observed to improve the education of students, especially in fields such as mathematics. Unfortunately, in relation to the mental and intellectual abilities of people, most of them consider it to be natural and innate, while according to the researches, it has been concluded that the human mind also acts like a muscle and can be increased and developed with practice and practical program. And in these researches, it has been shown that teachers who care about the mentality of people and its development have been observed to improve the education of students, especially in fields such as mathematics.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Dear Mrs. Doctor: You did not say anything about the type of bodybuilding, skin, height and so on. But in general, the advice you give to others is very important. You should know what you are looking for in your life. You must have a basic idea of what you want to do in life and what your criteria are. Then choose according to your criteria. In the end, you will definitely get the result you want, and that is the satisfaction of your conscience. Thank you for your trust, Ali Akbari-Khane Tawangari, greetings to you, Mrs. Mrs. Fatemeh, you did not mention the type bodybuilding bodybuilding. But you should know What you are thinking about your life, you must have some basic idea about what you expect to gain in your lifetime, and what you criteria are, then choose according To your criteria, in the end you will Definitely get the product you want. And that's the satisfaction Of your conscience, thank you for trusting us.</p>
+    </div>
+    
+
+    <div id="Text12" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Mrs. Doctor, how effective is the role of a role model in the formation of children's behavior and personality?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>I would like to answer this question with a metaphor. A man had a very beautiful parrot, but that parrot coughed all day long. The owner of that parrot was very upset and sad for the parrot, so he took him to the vet. The vet told him to leave the parrot for 3 days. Let it be here in front of me so that I can observe it closely. While smoking, the man accepted it despite his inner desire and returned after 3 days. The vet told him that there is nothing wrong with your parrot and that you can take him and that it is be</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Dear Mrs. Doctor: In the first place, it is very effective. The role of the family in the child's life is very important and influential. This means that the family should have a positive and effective influence on the child through the school, literature, parenting and even the school itself. The type of literature, the level of drama in the familyoscopic theater, the amount of laughter and laughter in the children at the age of 6-7, the relationship with the parents and the type of relationship with them at the time of the movie, are all effective factors in the development of the child. For example, in a movie about love, a father and his wife love each other very much, and they make a movie that is very attractive to the child, and the child becomes interested in it, and after watching the movie The Last Airbender, he becomes depressed and cries for weeks. Or that he becomes anxious and changes from the normal child behavior to the aggressive and psychotic behavior of the parents. In this case, the child will have a severe disorder that is, if not treated, will last several years. In addition, the role model is important because the child is likely to take this movie seriously or to continue the movie. In the next step, after watching The LastAirbender, the children will be made aware of the special effects and the role they play in the movie and will be able to tell their roles and the consequences of their behavior. Thank you for your advice. Sincerely, Ali Akbari, Tawangari Toubi, Hello, Dear Mrs. Dear Mrs., In the movie about Love, a Father and his Wife love each Other very much and they are making a movie That is, very effective, and influential, in the sense that the role and the family of the children should have an effective and positive influence on their child through The school, Literature, parenting, and even The school itself will be effective in the direction of the development Of the child and in the next steps, after seeing The Last airbender, they will be making a serious movie, and in this case the child Will be made to understand the special features and the effects of their Behavior. Thank You for your guidance. Sincere, Ali akbari Tawankari Tubi.</p>
+    </div>
+    
+
+    <div id="Text13" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Mrs. Doctor, what does generalized anxiety mean?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Consider a person who is constantly worried about trivial matters and is anxious, his anxiety increases so much that he cannot sleep properly, his body is constantly in a state of contraction because it is in a constant state of contraction, so he has a certain fatigue and bruise and is very tired. He is a very light sleeper and wakes up at the slightest noise. He is worried about his family, he is worried about his health, he is worried about the economic situation, he is worried about his future, in short, he is worried. Read about generalized anxiety disorder and cognitive behavioral therapy for generalized anxiety disorder. The first advice I have for these people is to please tolerate the ambiguous conditions. That is, do your right and necessary work, but just tolerate what will happen in the future. Sometimes these people even spend a lot of money in order to reduce their stress and find out about their future, not knowing that they are increasing their anxiety with this action, and the only thing these people should learn and practice. What they should do is to practice not knowing and not seek to find and know everything in the future because it is definitely impossible. Consider a person who is constantly worried about trivial matters and is anxious, his anxiety increases so much that he cannot sleep properly, his body is constantly in a state of contraction because it is in a constant state of contraction, so he has a certain fatigue and bruise and is very tired. He is a very light sleeper and wakes up at the slightest noise. He is worried about his family, he is worried about his health, he is worried about the economic situation, he is worried about his future, in short, he is worried. Read about generalized anxiety disorder and cognitive behavioral therapy for generalized anxiety disorder. The first advice I have for these people is to please tolerate the ambiguous conditions. That is, do your right and necessary work, but just tolerate what will happen in the future. Sometimes these people even spend a lot of money in order to reduce their stress and find out about their future, not knowing that they are increasing their anxiety with this action, and the only thing these people should learn and practice. What they should do is to practice not knowing and not seek to find and know everything in the future because it is definitely impossible.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Generalized anxiety disorder means that a person feels anxious in a particular situation or in a general way. For example, he is worried about his wife's health and asks her to go to the doctor with him. Generalized anxiety is not specific to one or more situations. Sometimes it is seen that a child or teenager suffers from generalized anxiety disorder, which means that he is anxious in all situations of the house, school, workplace, etc. It is not a disease, and if it is a generalized anxiety, the person gets used to it and becomes anxious in different situations. For more information, you can read the book "Generalized Anxiety Disorder" by Dr. Ali Sahibi in Tehran, Tubi's Wealth House, Hello, and Good Time, published by Farzaneh Vadoudi Khana Tawangari. Generalize anxiety disorder is not only anxiety, but the anxiety of the entire family, especially the mother. In general, it can be seen that the use of some herbal medicines can aggravate prism</p>
+    </div>
+    
+
+    <div id="Text14" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Hello, doctor, I was your student and I have decided to continue studying psychology. I know that psychology is the only field that I must constantly study and until the end of my life, if I am in this field, I will be a student without an end, but I really don't know where. I should start from what books should I start so that I can continue the right path of this field. Thank you for giving your opinion about the study and explaining to us the way you went.</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>With regards and respect, my advice is not only to you, but to all friends who have stepped into this field, that first of all, a very important and necessary subject that you should pay attention to is to focus all your attention on your university source books because These books are not written by one person, but they are written by a group of experts, and that is why they have multiple perspectives, and after fully understanding the university books, study outside the university books. It is very harmful if you do not study the theories and theories and textbooks of your university and before mastering them, read books such as Freud and Jung and. pay because there must be a big mental map of different theories in your mind. If your question is about my studies, I must say that in addition to the detailed study of university courses that have been repeated to me not once, but many times in my university lectures, most of my studies are in addition to psychology, sociology, politics, philosophy and literature because In my opinion, the science of psychology is the only science that without each of these, it is not possible to understand all issues and problems, and the greater the variety of studies in different fields, the better the mind can classify different issues about others. With regards and respect, my advice is not only to you, but to all friends who have stepped into this field, that first of all, a very important and necessary subject that you should pay attention to is to focus all your attention on your university source books because These books are not written by one person, but they are written by a group of experts, and that is why they have multiple perspectives, and after fully understanding the university books, study outside the university books. It is very harmful if you do not study the theories and theories and textbooks of your university and before mastering them, read books such as Freud and Jung and. pay because there must be a big mental map of different theories in your mind. If your question is about my studies, I must say that in addition to the detailed study of university courses that have been repeated to me not once, but many times in my university lectures, most of my studies are in addition to psychology, sociology, politics, philosophy and literature because In my opinion, the science of psychology is the only science that without each of these, it is not possible to understand all issues and problems, and the greater the variety of studies in different fields, the better the mind can classify different issues about others.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>With regards and respect, thank you for considering us as your confidant. In relation to what you mentioned, there are several important points that your service is provided. The first point is that psychology has many topics in common with business, but the degree of success in business is not as high as psychology. Because many topics that are similar to business are also studied in business schools, but because of the different size of business, these subjects are not studied at the same level and because of their importance, they are not taught at the level of psychology. But if you want to study psychology, it is definitely the right thing to do. Because every human being is different from another. This Gunnit philosophy has caused a lot of differences between people and each other in the field of psychology, and it is natural that even though we all believe in the same thing, our different thoughts may have different results. For example, a person who believes in psychology may be a successful person, but if he does not have many followers, he is not successful. Because he has few followers, his success is measured by the number of followers. This is the reason for the difference in thinking between people. In general, the more similar the thoughts are in the general psychology, the easier it is for them to understand each other, because the basic premise of psychology is based on following three basic principles: 1- Everything must be measurable, so that people can be measured and can be compared: 2- Nothing can be gained without a comparison. 3- Nothing more than the truth is measured, so if you believe in yourself and others and they are successful, it can be said that you have succeeded. I started with the idea that you should study psychology to get a good understanding of yourself and the field. The next point is about the place of study and. It is a good idea to study in university, but sometimes it is not the best way to study due to the conditions of the university and the pressure of work. I recommend you to study wherever you want, and you can even take the test several times from your daily schedule</p>
+    </div>
+    
+
+    <div id="Text15" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Mrs. Doctor, why do we end up taking photos the more we love a series of people?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Loving people with three types of personality disorders not only does not make them better, it causes more harm. These 3 personality disorders include: narcissistic personality disorder, borderline personality disorder, and dramatic personality disorder. To learn more about these types of personalities, you can read the types of personality disorders in the section of psychology articles. Loving people with three types of personality disorders not only does not make them better, it causes more harm. These 3 personality disorders include: narcissistic personality disorder, borderline personality disorder, and dramatic personality disorder. To learn more about these types of personalities, you can read the types of personality disorders in the section of psychology articles.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Because we are social beings who, when we have a moment of silence, choose a photo to show off our social relationships with others. In this way, the more our friends, the greater our intimacy and closeness to……that person. It is the same in the workplace, with the boss, everyone has a photo of the work colleague, and in the end, the boss takes the photo and the whole group photos with him. It keeps the focus narrow and does not allow us to move closer to the person we are with, or to show other people in the same situation. This way, if we know that my close friend is interested in our colleague, we show him the photo, and he gets excited, and the group photos are taken. We do not take any special action in these photos, it is just a group of friends taking a quick picture of a person. There is no action taken by the people around. It becomes a background for the group, and because we are interested in the other person, taking a photo becomes our business, and as a group, we take many pictures. The important thing is that the focus should be on the person who is important to us. If you take a close look at your friend, you may notice a behavior pattern that has been repeated many times: for example, when you take the photo of your colleague, you focus on him, and when he takes a close picture of you, you raise your photo again. The group, after taking several pictures, rotate the picture 90 degrees to the left and right. You can see the same person several times and many times again. You must be able to see your friend from several angles. This orientation is called empathy, or the inability to see another person, for example. You cannot do this with other people, only your friend can do this. rotate the phone and take a series, for instance take a picture of the group and take another one of the people from the front and the back, and after taking another picture of them from the same angle. The same person and their companion, for this purpose, you can use your imagination, for ex</p>
+    </div>
+    
+
+    <div id="Text16" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Doctor, how can we recognize a child who has been sexually abused?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Bedwetting, nightmares, phobias, depression, stress disorder, abnormal sexual behaviors, fear of people such as a kindergarten teacher or babysitter, finger sucking, running away from school or home, suicide and related thoughts, fear of going to the bathroom or Going to the bathroom more than normal can be a sign of child sexual abuse, as well as fear of any kind of physical contact, frequent urinary infections, difficulty sitting and standing up, swelling, bruising or bleeding in the genitals of these children. Blood or blood stains on the child's underwear. Bedwetting, nightmares, phobias, depression, stress disorder, abnormal sexual behaviors, fear of people such as a kindergarten teacher or babysitter, finger sucking, running away from school or home, suicide and related thoughts, fear of going to the bathroom. or going to the bathroom more than normal can be signs of child sexual abuse, as well as fear of any kind of physical contact, frequent urinary infections, difficulty sitting and standing up, swelling, bruising or bleeding in the genitals of these children. Observing blood or its stains in the child's underwear. direction.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>First, the mother should make sure that the child has no history of sexual abuse. At the same time, the father should also be sure that this child has not been abused by anyone and is not suffering from any special disorder. Children who have been abused sometimes have very vague memories, for example, they may remember something that happened a few months ago and not remember anything from the previous year. If the child remembers the incident, the therapist should try to find the background of the memory and examine the child. If it is not possible to do this, we should recognize the child and talk to him about this issue. Of course, in some cases, we may not be able to recognize the sexual abuse of the child, and in these cases we need to refer to a child and adolescent psychiatrist to help with the identification of the victim.</p>
+    </div>
+    
+
+    <div id="Text17" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Mrs. Doctor, my sister is 17 years old, she always gets some kind of restlessness when she sleeps and runs away from sleeping. During the day, he is calm and has no fear or anxiety, but when he sleeps, his behavior becomes completely different and he hides himself under the blanket and is afraid that his head will be out of the blanket, and he sleeps painfully. Could this be a schematic? Do you have an appointment for schema therapy?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Hello, yes, these are signs of the existence of a trap or a schema, anxiety or fear has been institutionalized in your sister since childhood and now it is bothering her. Yes, for schema therapy, you have to make an appointment at our center and you can come in person. Hello, yes, these are signs of the existence of a trap or a schema, anxiety or fear has been institutionalized in your sister since childhood and now it is bothering her. Yes, for schema therapy, you have to make an appointment at our center and you can come in person.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>restlessness and anxiety are relatively common in children, especially from the age of 3. This situation is completely normal in children and there is no need for treatment. However, in this regard, the family is obliged to teach the child about anxiety through a series of experiences and learn the necessary skills. In the first step, the child should be embarrassed by showing anxiety symptoms, and then the family should gradually reduce the anxiety and make the child feel comfortable in the presence of the child. It is necessary for the child to gradually reduce its anxiety symptoms with the help of a psychologist. In this way, the parents should gradually force the child into relaxation and lying by showing the child attractive behaviors. The best way to encourage children to lie is to make the environment attractive and comfortable for them. Therefore, in the home environment, try to get all the children interested in lying and making noise so that the child feels comfortable and involved in the activity. In fact, the best way is for the parents to show the child's sense of ownership towards their child, which they should do in the same way that they are doing now with the playing and sleeping rituals. Let the child know that lying is bad and lying is dangerous for the person and the child, and gradually the child will start to lie more and more. Let him know that it is better to be feared than to be loved. This method is a good encouragement for children to start lying, and it will cause them to be more comfortable in lying.</p>
+    </div>
+    
+
+    <div id="Text18" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Mrs. Doctor, in your counseling center, you also give counseling for babies or children. How can I get some information about the child, about raising him and treating him and his wishes?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Hello, yes, we have a child psychologist in our center, you can contact our office to book an appointment with any of them. In connection with the second question, you can read the contents of infant psychology and what is child psychology. Hello, yes, we have a child psychologist in our center, you can contact our office to book an appointment with any of them. In connection with the second question, you can read the contents of infant psychology and what is child psychology.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>The Khaviar program is a great resource for working parents. They provide live counseling for children and families, and they are very friendly. I’ve always liked them. Their website and phone are very helpful. They are also very helpful in arranging child visitation, baby showers, etc. They have phone numbers for in-laws and ex-laws, as well as internet sites for finding babysitters. I would recommend that you contact them for more information — especially if possible, for your baby. They can also email or text for more guidance.</p>
+    </div>
+    
+
+    <div id="Text19" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Hello, don't worry, I'm a 15-year-old girl, and my parents are all in the same room, they don't even let me go away from home alone in that alley, or I don't live at all until I'm 14 years old. I am in a prison cage, they are really wrong in their upbringing, to the extent that I tell them not to spoil me so much, and I have the effects of it. I feel that I get angry for no reason.</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Hello, thank you. It is better for you to concentrate on your studies and study well and get accepted into a good university so that you can find a job and spend more hours away from home because of your job so that you are less under control. Be your family. The only help you can give is to help yourself to achieve a sense of satisfaction and satisfaction before you want to change your parents who cannot be changed. A good university is accepted so that you can find a job and spend more hours away from home because of your job so that you are less under the control of your family. The only help you can give is to help yourself to feel contented and happy before you want to change your parents who cannot be changed.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Hello, I read your letter. You are in a very difficult situation. You have been living in aprison for years, and some of this anger has caused you to resist your parents and not live according to your wish. I don’t know what your situation is now, but I hope that my answer will help you to some extent. You mentioned that your parents are in the prison, are they there with you or not? If they are not there, how come you don‪t experience any anger despite being in a prisoner? What happens if you break the prison rules and get out? How do you feel about yourolen</p>
+    </div>
+    
+
+    <div id="Text20" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Doctor, how can we get to know parenting methods so that we can consult later? Can you help me to get general information because I feel that I am having a harsh behavior with a 4-year-old child, thank you.</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Hello good time. It is admirable that you are persistent and want to try to raise your child. You can read about child rearing methods in the article on child rearing methods. If you feel aggressive, you must start the treatment yourself and call the office for a consultation. Hello good time. It is admirable that you are persistent and want to try to raise your child. You can read about child rearing methods in the article on child rearing methods. If you feel aggressive, you must start the treatment yourself and call the office for a consultation.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Parental methods are used in all cultures to guide children to be healthy and successful. In the process of proper socialization, the child's sense of self- awesomely becomes positive and the parents' sense of worth andconfidence is increased. It is also seen that the parents give much importance to the child and his future, so that in a successful way, the parents prevent many mistakes and have the necessary knowledge to guide him in the right way. It should be noted that proper social communication with the child is one of the skills that will help him to a successful and stable life. It seems that the child has a great need for parents, but the parents themselves do not have enough skills to guide and make him aware of the proper way of dealing with a child, so it is recommended that parents familiarize themselves with the methods of parenting with their children in order to be able to guide them in the best way.</p>
+    </div>
+    
+
+    <div id="Text21" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Hello, Mrs. Doctor. My aunt is about 43 years old. His behavior has been very bad for about a year or two. Their life is not bad, but they are not satisfied with anything, they keep complaining and saying that my life was wasted, but they don't do anything to improve their life. It's really strange, but there is something even more strange that they keep telling other women and ladies like the girls of their family or even their daughter who is about 14 years old. He is jealous and quarrels and fights. Aside from that, can a mother be jealous of her daughter? But he supports the success of his son or all the sons of his family and becomes happy and helps them. So, if you are jealous, what is the difference between a girl and a boy? My mother and I and others cannot understand or tolerate him at all, we cannot understand these contradictions and the reason for his behavior and we do not know how to help him because he considers his behavior and work completely justified and does not accept anyone's words. Most of all, I feel sorry for my aunt's daughter, whose life is being destroyed, she is really suffering, we don't know how to help her.</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Unfortunately, according to your explanation, your aunt has a personality problem and mood disorder, and she must be treated with medication and a psychologist.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>With regards and respect, according to your explanation, it seems that you are a little far from reality. The problem is that you do not see the necessary and sufficient maturity in your aunt's and male relatives, and you do Not see the maturity and warmth in them. It is true that maturity and personality are necessary for start</p>
+    </div>
+    
+
+    <div id="Text22" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Mrs. Doctor, how can you behave properly with children?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Every child has different personality and needs depending on their age, mentality and level of maturity. It may not be a good practice to buy the same gift for many children;. Even if these children are twins. Because every child is unique and likes to feel this specialness. Every child's mentality is different even from his siblings. The child likes that his mother and father understand his mood and deal with him according to his mood. Not complying with these things will cause childhood injuries in them, which will </p>
+        <h3>'Prediction Model:'</h3>
+        <p>Dear Mrs. Doctor: I can't do anything properly with Children. I don't know how to behave with children, I don'T know how not to behave properly, I got confused. I want to know that if I want something, I should behave properly. I got tired myself. I apologize to all the children. I do everything I can to please the children, because I am the mother of all children. Please guide me to behave in such a way that I can satisfy the children and avoid the harm of those around me. Thank you for your trust, Mrs. Khordmand, I can do everything to please children, as I am mother of four children. Your advice is very important to me. Registering and editing the answer to the cancellation of the request. Mrs. Dr. Khordeh, how to properly behave with Children: I don’t know how can I behave properly? I got bored myself. IIRC, you can treat children properly, because you are the mother. Please advise to behave respectfully with all the Children, because being a mother is the best position to be in.</p>
+    </div>
+    
+
+    <div id="Text23" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Mrs. Doctor, my husband has made me miserable, so far we have not been able to reach a conclusion and solve the problem. I say one thing, it takes something else, it's better to be silent and not say anything, because a thousand other things come up that have nothing to do with the problem that happened. What should I really do, where is the problem with our work? Thank you for your help.</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>In my opinion, dear friend, you and your wife try to talk more than listen to me in the discussions that arise. So if I want to tell you very briefly, it is to talk less and listen more. Now I will explain more to you. I have heard this saying a lot that listen to your inner intuition more, but unfortunately no one has taught us how to listen carefully to what others say. That's why I suggest you to listen to the article well. In my opinion, dear friend, you and your wife try to talk more than listen to me in the discussions that arise. So if I want to tell you very briefly, it is to talk less and listen more. Now I will explain more to you. I have heard this saying a lot that listen to your inner intuition more, but unfortunately no one has taught us how to listen carefully to what others say. That's why I suggest you to listen to the article well.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>With regards and respect, I read your letter, but I did not understand a few things. First of all, you are married, and as you mentioned, you have a husband who has made you feel miserable. It is true that the existence of problems in a joint life is normal, but how to solve these problems is a matter of several factors, which must be taken into account in your life together. The first and most important of them is the existence </p>
+    </div>
+    
+
+    <div id="Text24" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Doctor, I have a very important exam in a few weeks. The problem I have is that I can't get things into my head. At first, I thought I had a problem with concentration. I came to your counseling center and did a brain map, but the answer was the same, and I had no problems with memory, attention and concentration, but I'm really confused. I don't know what to do when I don't have any. Can you guide me?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>I will give you a solution that is very helpful, before that I suggest you read the article on boredom in psychology. in learning the material. The mind needs time to stabilize and maintain content, and it is not possible to enter large amounts of information into the brain overnight. After entering the information into the brain, give it a small rest and start again. After reading each article, be sure to test yourself and keep repeating what you have learned to others. These three methods can help you to pass this test. do. I will give you a solution that is very helpful, before that I suggest you read the article on boredom in psychology. in learning the material. The mind needs time to stabilize and maintain content, and it is not possible to enter large amounts of information into the brain overnight. After entering the information into the brain, give it a small rest and start again. After reading each article, be sure to test yourself and keep repeating what you have learned to others. These three methods can help you to pass this test. do.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>There are different types of attention deficit disorder. In this disorder, the person is worried about getting things into his head and is constantly worried that he cannot get things out of his head. If there is no external event that causes this worry, it will be anxiety and stress. Usually, this disorder is accompanied by a decrease in concentration and attention, and in this way, a person loses his motivation and self-confidence. The most important thing is to find the root cause of this worry and eliminate it with the necessary skills. Counseling with a psychologist helps to moderate stress and anxiety symptoms.</p>
+    </div>
+    
+
+    <div id="Text25" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Doctor, how can we know if we or those around us are charismatic or not?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Hello, you can read the article "What is a charismatic personality" and by knowing the characteristics of these people, you will be able to know these people and also by learning the mentioned skills, you can create their characteristics in yourself. Hello, you can read the article Study what a charismatic personality is and by getting to know and knowing the characteristics of these people, you will be able to know these people and also by learning the mentioned skills, you can create their characteristics in yourself.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>By being around you and observing your behavior, you can get to know yourself and others. If you find that you are a kind and considerate person, you will definitely be successful in your work. In order to be successful and stable, you must have a series of skills that are valuable to you, and this is why you should use your abilities to benefit from the experiences you have. Use the skills you acquire to be more successful and purposeful. In this way, be sightsless, unable to concentrate, emotionally detached, stubborn or unable to communicate, and you should think of a goal and plan for your future. It is necessary to change your perspective on life to think about your goals, plans and desires.</p>
+    </div>
+    
+
+    <div id="Text26" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Mrs. Doctor, apart from preaching and advice, how can we tell each other behavioral errors to be effective?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>If I want to answer according to my psychology science and expertise, I must say that when we pay attention to the way of thinking and feelings resulting from a person's thoughts, the amount of prejudice in maintaining his wrong behavior is greatly reduced and he is more receptive to our words. Takes. How people deal with criticism can be one of the criteria of marriage in terms of importance. For example, instead of asking what did you do, let's ask what happened that made you come to the conclusion that you have to choose this behavior to achieve your goal? And when the person is explaining how to achieve the result of his behavior, he realizes what exactly were his mistakes in the way he thought to choose that behavior! So, the best way is to understand and consider that person's feelings and thinking, and choose sentences that do not attack his work and calmly invite him to explain. If I want to answer according to my psychology science and expertise, I must say that when we pay attention to the way of thinking and feelings resulting from a person's thoughts, the amount of prejudice in maintaining his wrong behavior is greatly reduced and he is more receptive to our words. Takes. How people deal with criticism can be one of the criteria of marriage in terms of importance. For example, instead of asking what did you do, let's ask what happened that made you come to the conclusion that you have to choose this behavior to achieve your goal? And when the person is explaining how to achieve the result of his behavior, he realizes what exactly were his mistakes in the way he thought to choose that behavior! So, the best way is to understand and consider that person's feelings and thinking, and choose sentences that do not attack his work and calmly invite him to explain.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>In the field of education, there are many effective ways to teach behavior, which include the school method, the clinic, the elders, and the client. In the guidance of adults, the most effective way is to talk to them about the problem and ask them for their reasons, then explain the method. If they do not know the reason, they should refrain from explaining the method and if they think that the method is ineffective, they can refer to a psychiatrist to use the method again. In addition, the mentioned person is depending on the culture of the family, which is different from the family in terms of beliefs, and this difference in the family causes behavioral mistakes.</p>
+    </div>
+    
+
+    <div id="Text27" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">How can you forget the betrayal that happened in a relationship? Even after the passage of a lot of time, just when we think that everything is fine and on the way, but the behavior of the traitor is constantly reminded and becomes an excuse for fighting and arguing.</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>It should be said to the friends who experienced this bitter experience in life that it is completely understandable, but you should definitely analyze more that when you found out about your wife's secret relationship, what was your position in that situation? The question has definitely come to you, what to do after the betrayal of your wife? In that situation, you really had the right to choose between staying and leaving. You must have stayed for some reason, and some reasons made you give up on separation and div</p>
+        <h3>'Prediction Model:'</h3>
+        <p>It is possible to forget the betrayals, but not forgetting the communication process is another matter. The behavior of each person in the relationship should liberalism in the first place. Justtext. It is possible that the person you are dealing with is a person who is addicted to excitement, and this is why he constantly repeats to himself in the middle of arguments that "I am not so person anymore", "I don't like this person". etc. In this case, it is better to make agreements with him so that you can easily leave the relationship and get out of this relationship. Also, it can be helpful to increase your tolerance in this field. By increasing your deliveries, you will reduce the number of these situations.</p>
+    </div>
+    
+
+    <div id="Text28" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Mrs. Doctor, my husband is always hanging out with his friends and they drink and shoot flowers. I really don't know what to do. I really want to save him. I really don't know what to do. I really want to save him, but I don't know how. Angrily, by threatening to break up with his family and my family and friends, but none of them seem to answer, how can I really help him?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Dear friend, if you want my opinion, I must tell you that to motivate people to give up their bad habits, advice and preaching are not the answer, but it makes the person resistant to maintain his negative behavior. Because the nature of most people is stubbornness in holding wrong beliefs and harming women. Now the answer to your question, how to sum up this case, I think it is better for you to have a review of yourself. How much friendship have you really reached or what kind of person are you looking for in life and what characteristics should he have and what are your red lines in life and what kind of lifestyle should you create for yourself and instead of changing their attitude, make your decision on Put your energy on whether to continue the relationship with these conditions or not?! And be sure that making any decision has its own consequences, but the right way is to make the right decision and stop changing it. But just make a decision. Dear friend, if you want my opinion, I must tell you that to motivate people to give up their bad habits, advice and preaching are not the answer, but it makes the person resistant to maintain his negative behavior. Because the nature of most people is stubbornness in holding wrong beliefs and harming women. Now the answer to your question, how to sum up this case, I think it is better for you to have a review of yourself. How much friendship have you really reached or what kind of person are you looking for in life and what characteristics should he have and what are your red lines in life and what kind of lifestyle should you create for yourself and instead of changing their attitude, make your decision on Put your energy on whether to continue the relationship with these conditions or not?! And be sure that making any decision has its own consequences, but the right way is to make the right decision and stop changing it. But just make a decision.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>With regards and respect, I read your letter and I noticed the problem you are facing, but before addressing your problem, I would like to point out a few points. In your letter, you mentioned a few things that are important, firstly, you are worried about your wife's inappropriate relationship with their friends, and secondly, you do not mention the reason for this problem. But in both cases, it can be seen that the number of these parties in relation to each other increases when there is a difference between the parties, so the first important point is to pay attention to the reason that your wife is hanging out With her friends. And when your wife tells you the reason, you should believe it. Another important point</p>
+    </div>
+    
+
+    <div id="Text29" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Mrs. Doctor, it has been many years since my mother died and my father became severely depressed. He is not very old, he is 60 years old, so he is lonely and guilty and very quiet and nothing makes him happy. Even when we are all in front of him. I very much agree that my father should remarry, but unfortunately, my 4 siblings strongly disagree and say that we should go and take care of dad ourselves. I want to see if my opinion is correct or not. Thank you for your guidance.</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Of course, loneliness bothers people more than anything else and causes serious harm to them. Especially fathers and mothers who get older and lose their sense of humor at the beginning of their old age, suddenly feel empty, lonely, and slowly start to think about death and struggle with it. Your siblings can read a little about what the needs of the elderly are and try to help them more. But your father's marriage is not a bad thing at all, and by the way, it helps him a lot, but first, you must seek help from a good psychiatrist or counseling for treating depression. Of course, loneliness bothers people more than anything else and causes serious harm to them. Especially fathers and mothers who get older and lose their sense of humor at the beginning of their old age, suddenly feel empty, lonely, and slowly start to think about death and struggle with it. Your siblings can read a little about what the needs of the elderly are and try to help them more. But your father's marriage is not a bad thing at all, and by the way, it helps him a lot, but first, you must seek help from a good psychiatrist or counseling for treating depression.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Hello dear friend, I read your letter. I am touched by the situation you are experiencing. Losing your parents and not having a supporter in this situation is certainly difficult despite the feelings they have for you. However, it seems that they have become weak in the fight against these conditions and have resorted to lies and threats. You have gone through difficult conditions in these years. However</p>
+    </div>
+    
+
+    <div id="Text30" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Doctor, I have a boyfriend who has many friends and spends a lot of time with each of them, for example, if you ask him to do something, he doesn't say no, and he tells me that it's ugly, I should say no, they are my social friends, for example, if even his boyfriend has a woman, even Her friend's wife asks my boyfriend to do something for her and I ask her to do something on the same day, I do her friend's wife's work and she says it is ugly, I should say no to her, you are not Ghaziba, her behavior is really normal, I am very confused.</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>My dear friend, I want to ask you your question in a different way, if by answering my question you come to the conclusion that you are not among the first priority of your boyfriend, then it is up to you to decide what to do. It's better to ask yourself like this, is it normal for me to prioritize being my boyfriend? And to ask yourself, whenever you had a request, how many times did he put you to work with different pretexts so that you realize that you are not his priority and that I wish it was better to know his virtues instead of asking if you asked if there is something wrong with my behavior. Who am I still with him? If you didn't ask me this question, it is very likely that you are not your first priority and you always care about others more than yourself. Well, now that servant of God, when he realizes that you are not your first priority, he will not consider you his first priority. It is clear that you get respect from others as much as you respect yourself. My dear friend, I want to ask you your question in a different way, if by answering my question you come to the conclusion that you are not among the first priority of your boyfriend, then it is up to you to decide what to do. It's better to ask yourself like this, is it normal for me to prioritize being my boyfriend? And to ask yourself, whenever you had a request, how many times did he put you to work with different pretexts so that you realize that you are not his priority and that I wish it was better to know his virtues instead of asking if you asked if there is something wrong with my behavior. Who am I still with him? If you didn't ask me this question, it is very likely that you are not your first priority and you always care about others more than yourself. Well, now that servant of God, when he realizes that you are not your first priority, he will not consider you his first priority. It is clear that you get respect from others as much as you respect yourself.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Hello, dear Fatima, I read your letter. I know the difficult situation you are in is very difficult. And the knowledge you have about your romantic partner is of great importance to you. However, it seems that they have avoided your attention for some time due to the many pressures they have from you. They have stated that they are looking for a wife who has a good appearance and is not seen as a patient, which is good in and of itself, but what is the use of a person who is not good in himself and cannot excite you? In the first stage, ask yourself why a person of the opposite sex would want to be in a relationship with you who does not have a good face and is seen as vain, and secondly, why a girl who has not</p>
+    </div>
+    
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
