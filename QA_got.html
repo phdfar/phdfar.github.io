@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 2200px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 2200px;
+}
+
+table, th, td {
+  border:1px solid black;
+}
+</style>
+</head>
+<body>
+
+<h2>Psychologist Modeling</h2>
+<p>Click on the buttons inside the tabbed menu:</p>
+
+<div class="tab">
+
+<button class="tablinks" onclick="openCity(event, 'Text1')" id="defaultOpen">Text 1</button>
+<button class="tablinks" onclick="openCity(event, 'Text2')">Text 2</button>
+<button class="tablinks" onclick="openCity(event, 'Text3')">Text 3</button>
+<button class="tablinks" onclick="openCity(event, 'Text4')">Text 4</button>
+<button class="tablinks" onclick="openCity(event, 'Text5')">Text 5</button>
+<button class="tablinks" onclick="openCity(event, 'Text6')">Text 6</button>
+<button class="tablinks" onclick="openCity(event, 'Text7')">Text 7</button>
+<button class="tablinks" onclick="openCity(event, 'Text8')">Text 8</button>
+<button class="tablinks" onclick="openCity(event, 'Text9')">Text 9</button>
+<button class="tablinks" onclick="openCity(event, 'Text10')">Text 10</button>
+<button class="tablinks" onclick="openCity(event, 'Text11')">Text 11</button>
+<button class="tablinks" onclick="openCity(event, 'Text12')">Text 12</button>
+<button class="tablinks" onclick="openCity(event, 'Text13')">Text 13</button>
+<button class="tablinks" onclick="openCity(event, 'Text14')">Text 14</button>
+<button class="tablinks" onclick="openCity(event, 'Text15')">Text 15</button>
+<button class="tablinks" onclick="openCity(event, 'Text16')">Text 16</button>
+<button class="tablinks" onclick="openCity(event, 'Text17')">Text 17</button>
+<button class="tablinks" onclick="openCity(event, 'Text18')">Text 18</button>
+<button class="tablinks" onclick="openCity(event, 'Text19')">Text 19</button>
+<button class="tablinks" onclick="openCity(event, 'Text20')">Text 20</button>
+<button class="tablinks" onclick="openCity(event, 'Text21')">Text 21</button>
+<button class="tablinks" onclick="openCity(event, 'Text22')">Text 22</button>
+<button class="tablinks" onclick="openCity(event, 'Text23')">Text 23</button>
+<button class="tablinks" onclick="openCity(event, 'Text24')">Text 24</button>
+<button class="tablinks" onclick="openCity(event, 'Text25')">Text 25</button>
+<button class="tablinks" onclick="openCity(event, 'Text26')">Text 26</button>
+<button class="tablinks" onclick="openCity(event, 'Text27')">Text 27</button>
+<button class="tablinks" onclick="openCity(event, 'Text28')">Text 28</button>
+<button class="tablinks" onclick="openCity(event, 'Text29')">Text 29</button>
+<button class="tablinks" onclick="openCity(event, 'Text30')">Text 30</button>
+<button class="tablinks" onclick="openCity(event, 'Text31')">Text 31</button>
+<button class="tablinks" onclick="openCity(event, 'Text32')">Text 32</button>
+<button class="tablinks" onclick="openCity(event, 'Text33')">Text 33</button>
+<button class="tablinks" onclick="openCity(event, 'Text34')">Text 34</button>
+<button class="tablinks" onclick="openCity(event, 'Text35')">Text 35</button>
+<button class="tablinks" onclick="openCity(event, 'Text36')">Text 36</button>
+<button class="tablinks" onclick="openCity(event, 'Text37')">Text 37</button>
+<button class="tablinks" onclick="openCity(event, 'Text38')">Text 38</button>
+<button class="tablinks" onclick="openCity(event, 'Text39')">Text 39</button>
+<button class="tablinks" onclick="openCity(event, 'Text40')">Text 40</button>
+<button class="tablinks" onclick="openCity(event, 'Text41')">Text 41</button>
+<button class="tablinks" onclick="openCity(event, 'Text42')">Text 42</button>
+<button class="tablinks" onclick="openCity(event, 'Text43')">Text 43</button>
+<button class="tablinks" onclick="openCity(event, 'Text44')">Text 44</button>
+<button class="tablinks" onclick="openCity(event, 'Text45')">Text 45</button>
+<button class="tablinks" onclick="openCity(event, 'Text46')">Text 46</button>
+<button class="tablinks" onclick="openCity(event, 'Text47')">Text 47</button>
+<button class="tablinks" onclick="openCity(event, 'Text48')">Text 48</button>
+<button class="tablinks" onclick="openCity(event, 'Text49')">Text 49</button>
+<button class="tablinks" onclick="openCity(event, 'Text50')">Text 50</button>
+<button class="tablinks" onclick="openCity(event, 'Text51')">Text 51</button>
+<button class="tablinks" onclick="openCity(event, 'Text52')">Text 52</button>
+<button class="tablinks" onclick="openCity(event, 'Text53')">Text 53</button>
+<button class="tablinks" onclick="openCity(event, 'Text54')">Text 54</button>
+<button class="tablinks" onclick="openCity(event, 'Text55')">Text 55</button>
+<button class="tablinks" onclick="openCity(event, 'Text56')">Text 56</button>
+<button class="tablinks" onclick="openCity(event, 'Text57')">Text 57</button>
+<button class="tablinks" onclick="openCity(event, 'Text58')">Text 58</button>
+<button class="tablinks" onclick="openCity(event, 'Text59')">Text 59</button>
+<button class="tablinks" onclick="openCity(event, 'Text60')">Text 60</button>
+<button class="tablinks" onclick="openCity(event, 'Text61')">Text 61</button>
+<button class="tablinks" onclick="openCity(event, 'Text62')">Text 62</button>
+<button class="tablinks" onclick="openCity(event, 'Text63')">Text 63</button>
+<button class="tablinks" onclick="openCity(event, 'Text64')">Text 64</button>
+<button class="tablinks" onclick="openCity(event, 'Text65')">Text 65</button>
+<button class="tablinks" onclick="openCity(event, 'Text66')">Text 66</button>
+<button class="tablinks" onclick="openCity(event, 'Text67')">Text 67</button>
+<button class="tablinks" onclick="openCity(event, 'Text68')">Text 68</button>
+<button class="tablinks" onclick="openCity(event, 'Text69')">Text 69</button>
+<button class="tablinks" onclick="openCity(event, 'Text70')">Text 70</button>
+<button class="tablinks" onclick="openCity(event, 'Text71')">Text 71</button>
+<button class="tablinks" onclick="openCity(event, 'Text72')">Text 72</button>
+<button class="tablinks" onclick="openCity(event, 'Text73')">Text 73</button>
+<button class="tablinks" onclick="openCity(event, 'Text74')">Text 74</button>
+<button class="tablinks" onclick="openCity(event, 'Text75')">Text 75</button>
+<button class="tablinks" onclick="openCity(event, 'Text76')">Text 76</button>
+<button class="tablinks" onclick="openCity(event, 'Text77')">Text 77</button>
+<button class="tablinks" onclick="openCity(event, 'Text78')">Text 78</button>
+<button class="tablinks" onclick="openCity(event, 'Text79')">Text 79</button>
+<button class="tablinks" onclick="openCity(event, 'Text80')">Text 80</button>
+<button class="tablinks" onclick="openCity(event, 'Text81')">Text 81</button>
+<button class="tablinks" onclick="openCity(event, 'Text82')">Text 82</button>
+<button class="tablinks" onclick="openCity(event, 'Text83')">Text 83</button>
+<button class="tablinks" onclick="openCity(event, 'Text84')">Text 84</button>
+<button class="tablinks" onclick="openCity(event, 'Text85')">Text 85</button>
+<button class="tablinks" onclick="openCity(event, 'Text86')">Text 86</button>
+<button class="tablinks" onclick="openCity(event, 'Text87')">Text 87</button>
+<button class="tablinks" onclick="openCity(event, 'Text88')">Text 88</button>
+<button class="tablinks" onclick="openCity(event, 'Text89')">Text 89</button>
+<button class="tablinks" onclick="openCity(event, 'Text90')">Text 90</button>
+<button class="tablinks" onclick="openCity(event, 'Text91')">Text 91</button>
+<button class="tablinks" onclick="openCity(event, 'Text92')">Text 92</button>
+<button class="tablinks" onclick="openCity(event, 'Text93')">Text 93</button>
+<button class="tablinks" onclick="openCity(event, 'Text94')">Text 94</button>
+<button class="tablinks" onclick="openCity(event, 'Text95')">Text 95</button>
+<button class="tablinks" onclick="openCity(event, 'Text96')">Text 96</button>
+<button class="tablinks" onclick="openCity(event, 'Text97')">Text 97</button>
+<button class="tablinks" onclick="openCity(event, 'Text98')">Text 98</button>
+<button class="tablinks" onclick="openCity(event, 'Text99')">Text 99</button>
+<button class="tablinks" onclick="openCity(event, 'Text100')">Text 100</button>
+
+</div>
+
+    <div id="Text1" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">What victory does Tyrion report to Daenerys as pyrrhic at Casterly Rock?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>The victory at Casterly Rock was pyrrhic.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Tyrion report his victory to Daario aspyrrhnik.</p>
+    </div>
+    
+
+    <div id="Text2" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Who does Arya Stark deviate from her mission to follow in Braavos?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Arya Stark deviates to reconnoiter Meryn Trant.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Arya StarkDeviates to reconnoiter Meryn Trant.</p>
+    </div>
+    
+
+    <div id="Text3" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Who wrote that the episode recaptured some classic "Thrones" qualities?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Spencer Kornhaber of The Atlantic wrote this.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Matt Fowler of IGN.</p>
+    </div>
+    
+
+    <div id="Text4" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">How many viewers did the episode "Fire and Blood" attract during its initial broadcast in the United States?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>3.04 million</p>
+        <h3>'Prediction Model:'</h3>
+        <p>The episode " fires and Blood attract 2.4 million viewers during its original broadcast inThe United States.</p>
+    </div>
+    
+
+    <div id="Text5" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Who infiltrates Yunkai to aid Daenerys in conquering the city in Season 3 of Game of Thrones?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Daario Naharis, Jorah, and Grey Worm</p>
+        <h3>'Prediction Model:'</h3>
+        <p>The warlocks of Qarth</p>
+    </div>
+    
+
+    <div id="Text6" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Whom did Robert Baratheon engage in single combat and defeat during the rebellion?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Robert Baratheon engaged in single combat with and defeated Rhaegar Targaryen during the rebellion.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Robert Baratheons engaged in single battle with Rhaegar Targaryen and defeated during the rebellions.</p>
+    </div>
+    
+
+    <div id="Text7" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">*Suggested question - Who appoints Ros to manage a brothel in King's Landing during season 2?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Littlefinger</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Unella</p>
+    </div>
+    
+
+    <div id="Text8" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Who is the only character to appear as a POV character in all 5 books of the series?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Arya Stark.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Melisandre is the alone character to show as a character in 5 books.</p>
+    </div>
+    
+
+    <div id="Text9" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Who accepts Arya into the House of Black and White in Braavos in Season 5?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>A man who wears Jaqen H'ghar's face</p>
+        <h3>'Prediction Model:'</h3>
+        <p>The Waif</p>
+    </div>
+    
+
+    <div id="Text10" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Who plays Hugh of the Vale in the series?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Jefferson Hall</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Jefferson Hall</p>
+    </div>
+    
+
+    <div id="Text11" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Who becomes regent of the realm following Robert's death?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Ned becomes the regent following Robert's death.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Ned becomes regen of the Realm.</p>
+    </div>
+    
+
+    <div id="Text12" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Why does Theon Greyjoy struggle to find Rickon and Bran in Season 2?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Theon Greyjoy struggles because Rickon and Bran are hiding in the crypts.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Theon Greyheart struggles to findRickon and Winterfell because they are hiding from Theon and the Stark boys.</p>
+    </div>
+    
+
+    <div id="Text13" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Who does Robb learn has escaped while he returns from the Crag and confesses he doesn't want to marry?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Jaime and Frey's daughter.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Jaime.</p>
+    </div>
+    
+
+    <div id="Text14" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">What change in "The Gift" garnered approval from critics at ''The Atlantic'' and others?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Tyrion's meeting with Daenerys.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Tyrion meeting Daenerys.</p>
+    </div>
+    
+
+    <div id="Text15" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">What significant difference was noted in the early draft regarding the resolution of the Catspaw plot arc compared to the aired episode?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>The early draft had a distinct resolution to Bran Stark's assassination attempt.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>The early draft had a different resolution to Bran Stark's assassination attempt.</p>
+    </div>
+    
+
+    <div id="Text16" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Who plays the character of Salladhor Saan in the series?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Lucian Msamati</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Lucian Msamati</p>
+    </div>
+    
+
+    <div id="Text17" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Which location in Northern Ireland was the setting for the execution site?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Cairncastle</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Cairncastle</p>
+    </div>
+    
+
+    <div id="Text18" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Which location appears 7 times in the text and is tied with Harrenhal and The Eyrie in total appearances?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>The Dreadfort appears 7 times in the text.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>The Eyrie appears 7 Times in the passage, tied with The Dreadfort and Oldtown.</p>
+    </div>
+    
+
+    <div id="Text19" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">What does Bran use his greenseeing abilities for to discover in Season 7?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Littlefinger's betrayal of Ned</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Bran uses his greenseseing skills to discover Jon Snow's true parentage in Season seventh.</p>
+    </div>
+    
+
+    <div id="Text20" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">What is the nationality of the actress who portrays Myrcella Baratheon in the HBO television adaptation?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>The actress who portrays Myrcella Baratheon in the HBO television adaptation is Irish, Aimee Richardson in the first two seasons and English actress Nell Tiger Free in the fifth and sixth seasons.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Ghanaian</p>
+    </div>
+    
+
+    <div id="Text21" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">What marks the end of the mountain road leading to the Vale?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>The mountain road ends at the Bloody Gate.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>The mountain road is marked by a grey mountain range on the western side of Essos.</p>
+    </div>
+    
+
+    <div id="Text22" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">What is the name of Jon Snow's direwolf?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Ghost</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Ghost</p>
+    </div>
+    
+
+    <div id="Text23" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">What was the total viewership difference between "Book of the Stranger" and "Oathbreaker"?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>The total viewership difference was approximately 0.54 million viewers.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>The total viewership differences were approximately 0.54 million viewers.</p>
+    </div>
+    
+
+    <div id="Text24" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Who is the reanimated character revealed to be Catelyn Stark in ''A Feast for Crows''?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Lady Stoneheart</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Lady exclusively known asLady Stoneheart</p>
+    </div>
+    
+
+    <div id="Text25" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Which character did Kerry Ingram portray in the episode?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Kerry Ingram portrayed the character of Princess Shireen Baratheon in the episode.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Kerry Ingram portrayed the character of Queen Selyse Baratheon.</p>
+    </div>
+    
+
+    <div id="Text26" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">What record did "The Dragon and the Wolf" set for cable television?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>It became the highest rated show on cable television for the night.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>It set a ratings record as the highest rated episode of the series.</p>
+    </div>
+    
+
+    <div id="Text27" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">How many people were estimated to be employed in the manufacture and decoration of linen in the north of Ireland at the end of the 19th century?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Over 100,000 people were estimated to be employed in the manufacture and decoration of linen in the north of Ireland at the end of the 19th century.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>More than 100 people were estimate to be hired in the jewel and Variety industry.</p>
+    </div>
+    
+
+    <div id="Text28" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">What is the title given to the leader of the Dornish people in "Game of Thrones"?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Prince of Dorne</p>
+        <h3>'Prediction Model:'</h3>
+        <p>The King in the North</p>
+    </div>
+    
+
+    <div id="Text29" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Where does Daenerys set up her base for the invasion of Westeros in Season 7?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Dragonstone becomes Daenerys' base for the invasion of Westeros in Season 7.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Daenerys sets up her based in Meereen for the invade of Westerose forces in Season7.</p>
+    </div>
+    
+
+    <div id="Text30" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Why is Tyrion appointed Hand of the King in "A Clash of Kings"?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Tyrion is appointed Hand of the King to control Cersei and Joffrey due to their political blunders.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Tyrion is appointed Hand by King Joffrey to counter the accusations of Joffard Stark being homosexual.</p>
+    </div>
+    
+
+    <div id="Text31" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Why does Cersei blame Tyrion for Joffrey's death?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Cersei blames Tyrion for Joffrey's death because she despises her brother and is convinced of his guilt due to their strained relationship.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Cersei blames Tyrion because she believes he is responsible for poisoning Joffery.</p>
+    </div>
+    
+
+    <div id="Text32" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">What is Sandor Clegane's nickname given to him by Prince Joffrey Baratheon in ''A Game of Thrones''?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Dog.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Sandor Clegge is nicknamed "the Hound" by PrinceJoffreyBaratheon.</p>
+    </div>
+    
+
+    <div id="Text33" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">What did David Benioff allude to regarding the symbols and patterns in the series?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>He referred to recurring symbols and patterns throughout the show.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>David Beniof alludered to the symbols "wolf" and "Wolf" in the episode.</p>
+    </div>
+    
+
+    <div id="Text34" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">How does the Society of Camera Operators Awards contribute to raising awareness about the importance of camera work in the entertainment industry?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>The Society of Camera Operators Awards contribute to raising awareness about the importance of camera work in the entertainment industry by highlighting the creative contributions and technical skills of camera operators in shaping visual storytelling.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>The Society ofCamera Operators Award contributes to raising Awareness about the importantness of camera working in the television industry by highlighting the intricate processes, creative decisions, and artistic vision that shape the visual storytelling in motion pictures and television.</p>
+    </div>
+    
+
+    <div id="Text35" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">What nickname became associated with Daenerys as a symbol of strength and empowerment for women?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>"Khaleesi" became a nickname associated with Daenerys as a symbol of strength and empowerment for women.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>The Stormborn</p>
+    </div>
+    
+
+    <div id="Text36" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">How did David J. Peterson approach translating sentences in Low Valyrian for the show?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>David J. Peterson would first write the sentences into High Valyrian, then apply phonological, semantic, and grammatical changes to the text for Low Valyrian translations.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>David J.Peterson attempted to translated sentences in low Valyria, using only the retainers of the original books as a guide.</p>
+    </div>
+    
+
+    <div id="Text37" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">How does Styr meet his end in the series?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Jon Snow smashes his head in with a hammer</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Styr is killed by a shadow before being sacrificed by Melisandre.</p>
+    </div>
+    
+
+    <div id="Text38" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Who kills Prince Rhaegar at the Battle of the Trident?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Robert Baratheon kills Prince Rhaegar.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Aegon kills PrinceRhaegars.</p>
+    </div>
+    
+
+    <div id="Text39" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Which area served as the exteriors for the entrance of Vaes Dothrak in the episode?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Sandy Brae.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Sandy Brae.</p>
+    </div>
+    
+
+    <div id="Text40" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">What is the approval rating on Rotten Tomatoes for the second season?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>The second season has a 96% approval rating from 37 critics on Rotten Tomatoes.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>The second season of "Game of Thrones" has a 93% approval rating.</p>
+    </div>
+    
+
+    <div id="Text41" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">How does George R. R. Martin approach character deaths in ''A Song of Ice and Fire''?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Martin kills off main characters to create tension and fear for readers, reflecting real-world unpredictability and significant death rates in war.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>He approaches them with care and heart.</p>
+    </div>
+    
+
+    <div id="Text42" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Who remains alive in the adaptation after the prologue?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Will remains alive in the adaptation after the prologue.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Daenerys remains alive as she Clive Brienne of Tarth after the Prologue.</p>
+    </div>
+    
+
+    <div id="Text43" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">How are the professions of Volantene slaves identified?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Volantene slaves have facial tattoos denoting their professions.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Volantene slave soldiers have facial tattoos denoting their professions.</p>
+    </div>
+    
+
+    <div id="Text44" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Why does Robb Stark marry Jeyne Westerling?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Robb Stark marries Jeyne Westerling to preserve her honor, breaking a marriage contract with House Frey.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Robb Stark marries Jeyn Westerling to earn the support of House Frey's support in the rebellion.</p>
+    </div>
+    
+
+    <div id="Text45" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Who admits to being responsible for Balon Greyjoy's death, although not in person?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Euron</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Euron Greyjoy</p>
+    </div>
+    
+
+    <div id="Text46" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">How does Stannis plan to gain the support of the northern mountain clans before marching on Winterfell?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>By attacking and taking control of Deepwood Motte.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>By enlisting the support from the northern Mountain clans.</p>
+    </div>
+    
+
+    <div id="Text47" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">What does Cersei resent Margaery for in Season 4?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Cersei resents Margaery for displacing her as Queen and marrying her young son in Season 4.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Cersei resents Margaenerys for her adultery in Season4.</p>
+    </div>
+    
+
+    <div id="Text48" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Who attacks Joffrey in the woods?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Arya's direwolf, Nymeria.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Arya's direwolf, Nymeria.</p>
+    </div>
+    
+
+    <div id="Text49" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">What lessons does Brienne's character provide according to Caroline Spector in "Power and Feminism in Westeros"?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>A stark lesson about women who take male power for their own being judged and treated poorly.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Brienne's role as a character serves as a mentor and confidant for both Catelyn and himself.</p>
+    </div>
+    
+
+    <div id="Text50" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Who played Rickon Stark in the TV adaptation?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Art Parkinson</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Rickon Stark was played byArt Parkinson in the HBO television adaptation.</p>
+    </div>
+    
+
+    <div id="Text51" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">How did critics feel about the balance of political intrigue and character interactions in the episode?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Critics felt that the episode provided enough political intrigue and touching character interactions to satisfy.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Critics felt that the balance was good and the actors wereaps in their role-playing.</p>
+    </div>
+    
+
+    <div id="Text52" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">What was the name of the special that aired before Series 8 in 2019 featuring stars of the show and superfans?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>"Gameshow of Thrones" was the special that aired before Series 8 in 2019.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>"Gameshow of Thrones" was the special series that aired after Series 8In 2019.</p>
+    </div>
+    
+
+    <div id="Text53" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Who does Lady Waynwood oppose in the Vale?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Petyr Baelish</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Lady Wayn Wood opposes Petyr Baelish in theValyrian Freehold.</p>
+    </div>
+    
+
+    <div id="Text54" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Who is blamed for the chaos and bloodshed that follows Ned Stark's execution?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Various factions and individuals.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Joffrey Baratheon.</p>
+    </div>
+    
+
+    <div id="Text55" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">What did the critics emphasize about the Tower of Joy flashback in their reviews of "Oathbreaker"?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>The critics emphasized the Tower of Joy flashback as a significant and impactful element in their reviews of "Oathbreaker".</p>
+        <h3>'Prediction Model:'</h3>
+        <p>The critics emphasized the Tower Of Joy flashback, especially highlighting the crucial scene with Jon Snow executing his assassins in the final scene of "osmell".</p>
+    </div>
+    
+
+    <div id="Text56" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Who is the first person to greet Jon when he meets Mance for negotiations?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Tormund</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Tormund</p>
+    </div>
+    
+
+    <div id="Text57" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Whom does Davos reminisce about Robert's Rebellion with at sea?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Stannis.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Davos reminisces that Robert's rebellion was won by Ned Stark at sea.</p>
+    </div>
+    
+
+    <div id="Text58" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">What aspect of the current Game of Thrones season did Erik Kain of Forbes find particularly engaging?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Erik Kain of Forbes found the ongoing tension and unpredictability in the current season of Game of Thrones particularly engaging.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Erik Kain was deeply affected by the ongoing tension and unpredictability in the current season of Game of</p>
+    </div>
+    
+
+    <div id="Text59" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">What is the significance of Volantis in the slave market?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Volantis is incredibly important to the slave market.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Volantis is incredibly important in the slaves market.</p>
+    </div>
+    
+
+    <div id="Text60" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">*Suggested question - Who does Hot Pie give news to Arya that Jon Snow has retaken Winterfell?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Hot Pie</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Arya</p>
+    </div>
+    
+
+    <div id="Text61" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Who is Ser Jorah Mormont?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Ser Jorah Mormont is the exiled Lord of Bear Island in the North.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Ser Jorah</p>
+    </div>
+    
+
+    <div id="Text62" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Who becomes Stannis Baratheon's Hand of the King?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Davos Seaworth becomes Stannis Baratheon's Hand of the King.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Davos Seaworth.</p>
+    </div>
+    
+
+    <div id="Text63" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">How many viewers tuned in for the first airing of "You Win or You Die"?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>2.4 million viewers.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>2.4 million viewers.</p>
+    </div>
+    
+
+    <div id="Text64" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">According to Remy Verhoeve, what can be said about the structural composition of ''A Dance with Dragons''?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Verhoeve mentions that the book feels like separate stories within the same setting, narrated through various characters' points of view.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>According to Verhoeves, the structural construction of ''a Dance with dragons'' is similar to what a baby has when it's born, with more bones and less fat.</p>
+    </div>
+    
+
+    <div id="Text65" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">What event is the episode "The Climb" named after?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>The episode is named after the climbing of the wall by Jon Snow and Ygritte.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>The events of the season</p>
+    </div>
+    
+
+    <div id="Text66" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Why did Benioff mention that the television series is coming to an end for Game of Thrones?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>"This is where the story ends."</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Due to the repeated use of rape as a plot device</p>
+    </div>
+    
+
+    <div id="Text67" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">How has the mnemonic system of Valyrian languages influenced memory techniques and pedagogy in the series?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>The mnemonic system of Valyrian languages has influenced memory techniques and pedagogy in the series by incorporating linguistic patterns, visual aids, and repetition for effective learning.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>The mnemon system ofValyrian vocals has a lasting impact on the memories of Ser Eustace, who is closing in on a related note.</p>
+    </div>
+    
+
+    <div id="Text68" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Where is Rickon believed to have fled to in ''A Dance with Dragons''?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Skagos</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Rickon is believed to be hiding in the crypts when Bran Stark is captured by the Brotherhood Without Banners.</p>
+    </div>
+    
+
+    <div id="Text69" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Who won a Directors Guild of America Award for "Mother's Mercy" in 2015?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>David Nutter won the award for "Mother's Mercy" in 2015.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>David Nutter won the award for " mother's Mercy".</p>
+    </div>
+    
+
+    <div id="Text70" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">What event prompts Ned Stark to leave for war the next morning after his wedding?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>The decisive Battle of the Trident.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>The Sack of King's Landing by Stannis Baratheon prompts Ned to leave the war the following week.</p>
+    </div>
+    
+
+    <div id="Text71" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">For what is Robb nicknamed for in ''A Clash of Kings''?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Robb earns the nickname "Young Wolf" for his ferocity in battle.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Robb is nicknamed "the Red Viper" for his rumored use of poisoned weapons.</p>
+    </div>
+    
+
+    <div id="Text72" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">In which book is Roose Bolton first introduced?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Roose Bolton is first introduced in the book ''A Game of Thrones''.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Roose Bolton is first introduced in the book ''A Game of Thrones''.</p>
+    </div>
+    
+
+    <div id="Text73" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">How many more books does George R.R. Martin still have to write for the series?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Two more books.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>George R. R. Martin remains four more books to write.</p>
+    </div>
+    
+
+    <div id="Text74" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">How does Margaery try to outmaneuver Cersei in Season 4?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Margaery tries to outmaneuver Cersei by ingratiating herself with Tommen in Season 4.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Margaery tries to outrun Cersei byerellyancing herself with her dragons in Season4.</p>
+    </div>
+    
+
+    <div id="Text75" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">What does Cersei Lannister plot to do in the episode "The Winds of Winter"?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Cersei Lannister plots to destroy all her immediate enemies with one swift stroke.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Cersei Lannisters plot to have the White Walkers breach the Wall to destroy the Night King's army.</p>
+    </div>
+    
+
+    <div id="Text76" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">What do the freed people from Yunkai shout, which means "mother" in Ghiscari?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Mhysa.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>" mother" means "son" inghiscari.</p>
+    </div>
+    
+
+    <div id="Text77" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Who is the first person to learn about Tyrion Lannister bringing his mistress Shae to King's Landing?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Varys is the first to learn about Tyrion Lannister bringing his mistress Shae to King's Landing.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Cersei Lannister.</p>
+    </div>
+    
+
+    <div id="Text78" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Who instructs Grey Worm in the language of Westeros in the episode "Oathkeeper" of Game of Thrones?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Missandei</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Missandei</p>
+    </div>
+    
+
+    <div id="Text79" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Who played Randyll Tarly in King's Landing?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>James Faulkner</p>
+        <h3>'Prediction Model:'</h3>
+        <p>James Faulkner</p>
+    </div>
+    
+
+    <div id="Text80" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">What did Nguyen of Indiewire find to be unsatisfactory about the ending of the Riverrun sequence in the episode "No One"?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Nguyen of Indiewire found the ending of the Riverrun sequence to be unsatisfactory in the episode.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Nguyen of Indowire found the ending to be dissatisfactory in the River run sequence.</p>
+    </div>
+    
+
+    <div id="Text81" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Who is besieging Storm's End when Tywin decides to march west in pursuit of Robb's army?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Stannis Baratheon is besieging Storm's End.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Stannis Baratheon is besieged Storm's end.</p>
+    </div>
+    
+
+    <div id="Text82" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">What brought about the downfall of Valyria?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>The Doom of Valyria, a catastrophic event involving volcanic eruptions, led to the downfall of Valyria.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>The downfall ofValyria was due to the Doom of ValYria, a catastrophic event involving volcanic eruptions.</p>
+    </div>
+    
+
+    <div id="Text83" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">What can be seen in the HD version of the first episode due to filming on 35 mm film?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Slight film grain can be seen in the HD version of the first episode.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>The first episode has been captured by a squad of Bolton soldiers.</p>
+    </div>
+    
+
+    <div id="Text84" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Who rescues Gendry from Dragonstone with the help of Davos?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Davos frees Gendry with the help of Salladhor Saan from Dragonstone.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Stannis Baratheon</p>
+    </div>
+    
+
+    <div id="Text85" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">What field of study does Sansa receive education in while posing as Littlefinger's daughter in the Vale?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Politics</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Politics</p>
+    </div>
+    
+
+    <div id="Text86" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Where is Arya Hasson from?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>The Waterside in Derry</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Arya Stark is from Braavos.</p>
+    </div>
+    
+
+    <div id="Text87" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">How many wives does Craster have?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Craster has nineteen wives.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Craster has eight wives.</p>
+    </div>
+    
+
+    <div id="Text88" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">What podcast offers an imaginative exploration of the fantastical elements in the series?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>''Mythical Astronomy of Ice & Fire''.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>''Mythical Astronomy of Ice & Fire''.</p>
+    </div>
+    
+
+    <div id="Text89" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">What is the fate of Robert's bastard Gendry after Robert's death in the TV adaptation?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Forced to flee the capital</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Forced to flee the capital</p>
+    </div>
+    
+
+    <div id="Text90" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">What role does Ser Gregor Clegane play within House Clegane?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Older brother</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Older brother</p>
+    </div>
+    
+
+    <div id="Text91" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Who is Rickon Stark said to be traveling with through the North in "A Dance with Dragons"?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Rickon Stark is said to be traveling with the wildling woman Osha through the North in "A Dance with Dragons."</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Rickon Stark is said to have accompanied Bran, Hodor, and others through the north.</p>
+    </div>
+    
+
+    <div id="Text92" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Who portrayed Tywin Lannister in the HBO television adaptation?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Tywin Lannister was portrayed by Charles Dance in the HBO television adaptation.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Tywin Lannisters were portrayed by Charles Dance in theHBO television adaptation.</p>
+    </div>
+    
+
+    <div id="Text93" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Who wrote the episode?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>David Benioff and D. B. Weiss wrote the episode.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>David Benioff and D. B. Weiss</p>
+    </div>
+    
+
+    <div id="Text94" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Where did the first night tradition take place between Roose and a commoner's wife?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Beneath a tree by the stream where the miller was hanged.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Beneath a tree by the stream where the miller was hanged.</p>
+    </div>
+    
+
+    <div id="Text95" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Where was the scene of Daenerys at sea filmed?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>The scene of Daenerys at sea was filmed at the Linen Mill Film & Television Studios in Banbridge.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>The scene was filmed at the Skirling Pass in County Down, Northern Ireland.</p>
+    </div>
+    
+
+    <div id="Text96" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Who ambushes Daenerys's fleet and kills Rhaegal at Dragonstone?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Euron's Iron Fleet ambushes Daenerys's fleet at Dragonstone and kills Rhaegal.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Euron Greyjoy ambushes her fleet and destroys Rhaegar's army at Dragonwater.</p>
+    </div>
+    
+
+    <div id="Text97" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">How many maps of the fictional world are available in the "A Song of Ice and Fire" books as of "A Dance with Dragons"?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Seven maps of the fictional world are available in the books as of "A Dance with Dragons".</p>
+        <h3>'Prediction Model:'</h3>
+        <p>The "A Game of Thrones" books are available online in advance during the development of the series.</p>
+    </div>
+    
+
+    <div id="Text98" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Who is punished for the murder of Trystane Martell?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Tyrion is punished for the murder of Trystane Martell.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>Ellaria Sand is punishment for the murders of Tryndane Martells.</p>
+    </div>
+    
+
+    <div id="Text99" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Whom does Illyrio Mopatis aid by sending a disguised Barristan Selmy?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>Illyrio Mopatis aids Daenerys by sending a disguised Barristan Selmy.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>In "A Dance with Dragons," Illyio Mopati aids Daenerys Targaryen by sending Barristans Selmy.</p>
+    </div>
+    
+
+    <div id="Text100" class="tabcontent">
+        <h3>Patient:</h3>
+        <p style="background: radial-gradient(circle, rgba(244,255,63,0.5102415966386555) 0%, rgba(253,240,45,0.4962359943977591) 100%);">Who held power in the Reach before the Tyrells?</p>
+        <h3>Ground-truth (Psychologist Expert Note):</h3>
+        <p>House Gardener held power in the Reach before the Tyrells took over.</p>
+        <h3>'Prediction Model:'</h3>
+        <p>House Gardener held power before theTyrells.</p>
+    </div>
+      
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
+  
